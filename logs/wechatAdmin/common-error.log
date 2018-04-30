@@ -1,0 +1,195 @@
+2018-04-29 20:13:49,155 ERROR 14618 [-/::1/-/15ms GET /] nodejs.AssertionError [ERR_ASSERTION]: Can't find viewEngine for /home/molei/www/wechatAdmin/app/view/index.nj
+    at ContextView.[contextView#render] (/home/molei/www/wechatAdmin/node_modules/egg-view/lib/context_view.js:66:5)
+    at <anonymous>
+generatedMessage: false
+name: 'AssertionError [ERR_ASSERTION]'
+code: 'ERR_ASSERTION'
+actual: ''
+expected: true
+operator: '=='
+pid: 14618
+hostname: molei-pc
+
+2018-04-29 20:15:51,403 ERROR 14928 [-/::1/-/22ms GET /] nodejs.AssertionError [ERR_ASSERTION]: Can't find index from /home/molei/www/wechatAdmin/app/view
+    at Map.resolve (/home/molei/www/wechatAdmin/node_modules/egg-view/lib/view_manager.js:74:5)
+    at <anonymous>
+generatedMessage: false
+name: 'AssertionError [ERR_ASSERTION]'
+code: 'ERR_ASSERTION'
+actual: undefined
+expected: true
+operator: '=='
+pid: 14928
+hostname: molei-pc
+
+2018-04-29 20:15:56,305 ERROR 14928 [-/::1/-/1ms GET /] nodejs.AssertionError [ERR_ASSERTION]: Can't find index from /home/molei/www/wechatAdmin/app/view
+    at Map.resolve (/home/molei/www/wechatAdmin/node_modules/egg-view/lib/view_manager.js:74:5)
+    at <anonymous>
+generatedMessage: false
+name: 'AssertionError [ERR_ASSERTION]'
+code: 'ERR_ASSERTION'
+actual: undefined
+expected: true
+operator: '=='
+pid: 14928
+hostname: molei-pc
+
+2018-04-29 20:16:10,337 ERROR 14982 [-/::1/-/15ms GET /] nodejs.AssertionError [ERR_ASSERTION]: Can't find viewEngine for /home/molei/www/wechatAdmin/app/view/index.nj
+    at ContextView.[contextView#render] (/home/molei/www/wechatAdmin/node_modules/egg-view/lib/context_view.js:66:5)
+    at <anonymous>
+generatedMessage: false
+name: 'AssertionError [ERR_ASSERTION]'
+code: 'ERR_ASSERTION'
+actual: ''
+expected: true
+operator: '=='
+pid: 14982
+hostname: molei-pc
+
+2018-04-29 20:16:19,747 ERROR 15076 [-/::1/-/15ms GET /] nodejs.AssertionError [ERR_ASSERTION]: Can't find index from /home/molei/www/wechatAdmin/app/view
+    at Map.resolve (/home/molei/www/wechatAdmin/node_modules/egg-view/lib/view_manager.js:74:5)
+    at <anonymous>
+generatedMessage: false
+name: 'AssertionError [ERR_ASSERTION]'
+code: 'ERR_ASSERTION'
+actual: undefined
+expected: true
+operator: '=='
+pid: 15076
+hostname: molei-pc
+
+2018-04-29 20:16:21,630 ERROR 15087 [-/::1/-/15ms GET /] nodejs.AssertionError [ERR_ASSERTION]: Can't find index from /home/molei/www/wechatAdmin/app/view
+    at Map.resolve (/home/molei/www/wechatAdmin/node_modules/egg-view/lib/view_manager.js:74:5)
+    at <anonymous>
+generatedMessage: false
+name: 'AssertionError [ERR_ASSERTION]'
+code: 'ERR_ASSERTION'
+actual: undefined
+expected: true
+operator: '=='
+pid: 15087
+hostname: molei-pc
+
+2018-04-29 20:16:36,743 ERROR 15136 [-/::1/-/15ms GET /] nodejs.AssertionError [ERR_ASSERTION]: Can't find viewEngine for /home/molei/www/wechatAdmin/app/view/index.nj
+    at ContextView.[contextView#render] (/home/molei/www/wechatAdmin/node_modules/egg-view/lib/context_view.js:66:5)
+    at <anonymous>
+generatedMessage: false
+name: 'AssertionError [ERR_ASSERTION]'
+code: 'ERR_ASSERTION'
+actual: ''
+expected: true
+operator: '=='
+pid: 15136
+hostname: molei-pc
+
+2018-04-29 20:16:45,988 ERROR 15136 [-/::1/-/2ms GET /] nodejs.AssertionError [ERR_ASSERTION]: Can't find viewEngine for /home/molei/www/wechatAdmin/app/view/index.nj
+    at ContextView.[contextView#render] (/home/molei/www/wechatAdmin/node_modules/egg-view/lib/context_view.js:66:5)
+    at <anonymous>
+generatedMessage: false
+name: 'AssertionError [ERR_ASSERTION]'
+code: 'ERR_ASSERTION'
+actual: ''
+expected: true
+operator: '=='
+pid: 15136
+hostname: molei-pc
+
+2018-04-29 22:29:16,820 ERROR 25035 nodejs.ENOENTError: spawn roadhog ENOENT
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:201:19)
+    at onErrorNT (internal/child_process.js:379:16)
+    at process._tickCallback (internal/process/next_tick.js:178:19)
+errno: 'ENOENT'
+code: 'ENOENT'
+syscall: 'spawn roadhog'
+path: 'roadhog'
+spawnargs: [ 'dev' ]
+name: 'ENOENTError'
+pid: 25035
+hostname: molei-pc
+
+2018-04-29 22:30:17,005 ERROR 25035 [egg-view-assets] Run "roadhog dev" failed after 60s
+2018-04-29 22:32:05,119 ERROR 25279 [egg-view-assets] "file" argument must be a non-empty string
+2018-04-29 23:31:27,447 ERROR 28816 [-/::1/-/13ms GET /public/style.css] nodejs.AssertionError [ERR_ASSERTION]: Can't find index from /home/molei/www/wechatAdmin/app/view
+    at Map.resolve (/home/molei/www/wechatAdmin/node_modules/egg-view/lib/view_manager.js:74:5)
+    at <anonymous>
+generatedMessage: false
+name: 'AssertionError [ERR_ASSERTION]'
+code: 'ERR_ASSERTION'
+actual: undefined
+expected: true
+operator: '=='
+pid: 28816
+hostname: molei-pc
+
+2018-04-29 23:31:29,550 ERROR 28816 [-/::1/-/1ms GET /list] nodejs.AssertionError [ERR_ASSERTION]: Can't find index from /home/molei/www/wechatAdmin/app/view
+    at Map.resolve (/home/molei/www/wechatAdmin/node_modules/egg-view/lib/view_manager.js:74:5)
+    at <anonymous>
+generatedMessage: false
+name: 'AssertionError [ERR_ASSERTION]'
+code: 'ERR_ASSERTION'
+actual: undefined
+expected: true
+operator: '=='
+pid: 28816
+hostname: molei-pc
+
+2018-04-29 23:31:36,220 ERROR 28816 [-/::1/-/1ms GET /public/style.css] nodejs.AssertionError [ERR_ASSERTION]: Can't find index from /home/molei/www/wechatAdmin/app/view
+    at Map.resolve (/home/molei/www/wechatAdmin/node_modules/egg-view/lib/view_manager.js:74:5)
+    at <anonymous>
+generatedMessage: false
+name: 'AssertionError [ERR_ASSERTION]'
+code: 'ERR_ASSERTION'
+actual: undefined
+expected: true
+operator: '=='
+pid: 28816
+hostname: molei-pc
+
+2018-04-29 23:31:38,008 ERROR 28816 [-/::1/-/1ms GET /public/style.css] nodejs.AssertionError [ERR_ASSERTION]: Can't find index from /home/molei/www/wechatAdmin/app/view
+    at Map.resolve (/home/molei/www/wechatAdmin/node_modules/egg-view/lib/view_manager.js:74:5)
+    at <anonymous>
+generatedMessage: false
+name: 'AssertionError [ERR_ASSERTION]'
+code: 'ERR_ASSERTION'
+actual: undefined
+expected: true
+operator: '=='
+pid: 28816
+hostname: molei-pc
+
+2018-04-29 23:31:43,751 ERROR 28816 [-/::1/-/1ms GET /public/style.css] nodejs.AssertionError [ERR_ASSERTION]: Can't find index from /home/molei/www/wechatAdmin/app/view
+    at Map.resolve (/home/molei/www/wechatAdmin/node_modules/egg-view/lib/view_manager.js:74:5)
+    at <anonymous>
+generatedMessage: false
+name: 'AssertionError [ERR_ASSERTION]'
+code: 'ERR_ASSERTION'
+actual: undefined
+expected: true
+operator: '=='
+pid: 28816
+hostname: molei-pc
+
+2018-04-29 23:31:45,207 ERROR 28816 [-/::1/-/2ms GET /public/style.css] nodejs.AssertionError [ERR_ASSERTION]: Can't find index from /home/molei/www/wechatAdmin/app/view
+    at Map.resolve (/home/molei/www/wechatAdmin/node_modules/egg-view/lib/view_manager.js:74:5)
+    at <anonymous>
+generatedMessage: false
+name: 'AssertionError [ERR_ASSERTION]'
+code: 'ERR_ASSERTION'
+actual: undefined
+expected: true
+operator: '=='
+pid: 28816
+hostname: molei-pc
+
+2018-04-29 23:31:46,813 ERROR 28816 [-/::1/-/1ms GET /list] nodejs.AssertionError [ERR_ASSERTION]: Can't find index from /home/molei/www/wechatAdmin/app/view
+    at Map.resolve (/home/molei/www/wechatAdmin/node_modules/egg-view/lib/view_manager.js:74:5)
+    at <anonymous>
+generatedMessage: false
+name: 'AssertionError [ERR_ASSERTION]'
+code: 'ERR_ASSERTION'
+actual: undefined
+expected: true
+operator: '=='
+pid: 28816
+hostname: molei-pc
+

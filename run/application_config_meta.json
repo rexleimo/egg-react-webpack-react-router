@@ -1,0 +1,312 @@
+{
+  "keys": "/home/molei/www/wechatAdmin/config/config.default.js",
+  "middleware": "/home/molei/www/wechatAdmin/config/config.default.js",
+  "static": {
+    "dir": "/home/molei/www/wechatAdmin/config/config.default.js",
+    "prefix": "/home/molei/www/wechatAdmin/node_modules/egg-static/config/config.default.js",
+    "dynamic": "/home/molei/www/wechatAdmin/node_modules/egg-static/config/config.default.js",
+    "preload": "/home/molei/www/wechatAdmin/node_modules/egg-static/config/config.default.js",
+    "buffer": "/home/molei/www/wechatAdmin/node_modules/egg-static/config/config.default.js",
+    "maxFiles": "/home/molei/www/wechatAdmin/node_modules/egg-static/config/config.default.js"
+  },
+  "view": {
+    "defaultViewEngine": "/home/molei/www/wechatAdmin/config/config.default.js",
+    "mapping": {
+      ".nj": "/home/molei/www/wechatAdmin/config/config.default.js"
+    },
+    "root": "/home/molei/www/wechatAdmin/node_modules/egg-view/config/config.default.js",
+    "cache": "/home/molei/www/wechatAdmin/node_modules/egg-view/config/config.local.js",
+    "defaultExtension": "/home/molei/www/wechatAdmin/node_modules/egg-view/config/config.default.js"
+  },
+  "session": {
+    "maxAge": "/home/molei/www/wechatAdmin/node_modules/egg-session/config/config.default.js",
+    "key": "/home/molei/www/wechatAdmin/node_modules/egg-session/config/config.default.js",
+    "httpOnly": "/home/molei/www/wechatAdmin/node_modules/egg-session/config/config.default.js",
+    "encrypt": "/home/molei/www/wechatAdmin/node_modules/egg-session/config/config.default.js"
+  },
+  "security": {
+    "domainWhiteList": "/home/molei/www/wechatAdmin/node_modules/egg-security/config/config.default.js",
+    "protocolWhiteList": "/home/molei/www/wechatAdmin/node_modules/egg-security/config/config.default.js",
+    "defaultMiddleware": "/home/molei/www/wechatAdmin/node_modules/egg-security/config/config.default.js",
+    "csrf": {
+      "enable": "/home/molei/www/wechatAdmin/node_modules/egg-security/config/config.default.js",
+      "useSession": "/home/molei/www/wechatAdmin/node_modules/egg-security/config/config.default.js",
+      "ignoreJSON": "/home/molei/www/wechatAdmin/node_modules/egg-security/config/config.default.js",
+      "cookieName": "/home/molei/www/wechatAdmin/node_modules/egg-security/config/config.default.js",
+      "sessionName": "/home/molei/www/wechatAdmin/node_modules/egg-security/config/config.default.js",
+      "headerName": "/home/molei/www/wechatAdmin/node_modules/egg-security/config/config.default.js",
+      "bodyName": "/home/molei/www/wechatAdmin/node_modules/egg-security/config/config.default.js",
+      "queryName": "/home/molei/www/wechatAdmin/node_modules/egg-security/config/config.default.js"
+    },
+    "xframe": {
+      "enable": "/home/molei/www/wechatAdmin/node_modules/egg-security/config/config.default.js",
+      "value": "/home/molei/www/wechatAdmin/node_modules/egg-security/config/config.default.js"
+    },
+    "hsts": {
+      "enable": "/home/molei/www/wechatAdmin/node_modules/egg-security/config/config.local.js",
+      "maxAge": "/home/molei/www/wechatAdmin/node_modules/egg-security/config/config.default.js",
+      "includeSubdomains": "/home/molei/www/wechatAdmin/node_modules/egg-security/config/config.default.js"
+    },
+    "dta": {
+      "enable": "/home/molei/www/wechatAdmin/node_modules/egg-security/config/config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "/home/molei/www/wechatAdmin/node_modules/egg-security/config/config.default.js"
+    },
+    "noopen": {
+      "enable": "/home/molei/www/wechatAdmin/node_modules/egg-security/config/config.default.js"
+    },
+    "nosniff": {
+      "enable": "/home/molei/www/wechatAdmin/node_modules/egg-security/config/config.default.js"
+    },
+    "referrerPolicy": {
+      "enable": "/home/molei/www/wechatAdmin/node_modules/egg-security/config/config.default.js",
+      "value": "/home/molei/www/wechatAdmin/node_modules/egg-security/config/config.default.js"
+    },
+    "xssProtection": {
+      "enable": "/home/molei/www/wechatAdmin/node_modules/egg-security/config/config.default.js",
+      "value": "/home/molei/www/wechatAdmin/node_modules/egg-security/config/config.default.js"
+    },
+    "csp": {
+      "enable": "/home/molei/www/wechatAdmin/node_modules/egg-security/config/config.default.js",
+      "policy": "/home/molei/www/wechatAdmin/node_modules/egg-security/config/config.default.js"
+    },
+    "ssrf": {
+      "ipBlackList": "/home/molei/www/wechatAdmin/node_modules/egg-security/config/config.default.js",
+      "checkAddress": "/home/molei/www/wechatAdmin/node_modules/egg-security/config/config.default.js"
+    }
+  },
+  "helper": {
+    "shtml": "/home/molei/www/wechatAdmin/node_modules/egg-security/config/config.default.js"
+  },
+  "jsonp": {
+    "limit": "/home/molei/www/wechatAdmin/node_modules/egg-jsonp/config/config.default.js",
+    "callback": "/home/molei/www/wechatAdmin/node_modules/egg-jsonp/config/config.default.js",
+    "csrf": "/home/molei/www/wechatAdmin/node_modules/egg-jsonp/config/config.default.js"
+  },
+  "onerror": {
+    "errorPageUrl": "/home/molei/www/wechatAdmin/node_modules/egg-onerror/config/config.default.js",
+    "appErrorFilter": "/home/molei/www/wechatAdmin/node_modules/egg-onerror/config/config.default.js"
+  },
+  "i18n": {
+    "defaultLocale": "/home/molei/www/wechatAdmin/node_modules/egg-i18n/config/config.default.js",
+    "dirs": "/home/molei/www/wechatAdmin/node_modules/egg-i18n/config/config.default.js",
+    "queryField": "/home/molei/www/wechatAdmin/node_modules/egg-i18n/config/config.default.js",
+    "cookieField": "/home/molei/www/wechatAdmin/node_modules/egg-i18n/config/config.default.js",
+    "cookieMaxAge": "/home/molei/www/wechatAdmin/node_modules/egg-i18n/config/config.default.js"
+  },
+  "watcher": {
+    "type": "/home/molei/www/wechatAdmin/node_modules/egg-watcher/config/config.local.js",
+    "eventSources": {
+      "default": "/home/molei/www/wechatAdmin/node_modules/egg-watcher/config/config.default.js",
+      "development": "/home/molei/www/wechatAdmin/node_modules/egg-watcher/config/config.default.js"
+    }
+  },
+  "multipart": {
+    "autoFields": "/home/molei/www/wechatAdmin/node_modules/egg-multipart/config/config.default.js",
+    "defaultCharset": "/home/molei/www/wechatAdmin/node_modules/egg-multipart/config/config.default.js",
+    "fieldNameSize": "/home/molei/www/wechatAdmin/node_modules/egg-multipart/config/config.default.js",
+    "fieldSize": "/home/molei/www/wechatAdmin/node_modules/egg-multipart/config/config.default.js",
+    "fields": "/home/molei/www/wechatAdmin/node_modules/egg-multipart/config/config.default.js",
+    "fileSize": "/home/molei/www/wechatAdmin/node_modules/egg-multipart/config/config.default.js",
+    "files": "/home/molei/www/wechatAdmin/node_modules/egg-multipart/config/config.default.js",
+    "fileExtensions": "/home/molei/www/wechatAdmin/node_modules/egg-multipart/config/config.default.js",
+    "whitelist": "/home/molei/www/wechatAdmin/node_modules/egg-multipart/config/config.default.js"
+  },
+  "development": {
+    "watchDirs": "/home/molei/www/wechatAdmin/node_modules/egg-development/config/config.default.js",
+    "ignoreDirs": "/home/molei/www/wechatAdmin/node_modules/egg-development/config/config.default.js",
+    "fastReady": "/home/molei/www/wechatAdmin/node_modules/egg-development/config/config.default.js",
+    "reloadOnDebug": "/home/molei/www/wechatAdmin/node_modules/egg-development/config/config.default.js",
+    "overrideDefault": "/home/molei/www/wechatAdmin/node_modules/egg-development/config/config.default.js"
+  },
+  "customLogger": {
+    "scheduleLogger": {
+      "consoleLevel": "/home/molei/www/wechatAdmin/node_modules/egg-schedule/config/config.default.js",
+      "file": "/home/molei/www/wechatAdmin/node_modules/egg-schedule/config/config.default.js"
+    }
+  },
+  "logrotator": {
+    "filesRotateByHour": "/home/molei/www/wechatAdmin/node_modules/egg-logrotator/config/config.default.js",
+    "hourDelimiter": "/home/molei/www/wechatAdmin/node_modules/egg-logrotator/config/config.default.js",
+    "filesRotateBySize": "/home/molei/www/wechatAdmin/node_modules/egg-logrotator/config/config.default.js",
+    "maxFileSize": "/home/molei/www/wechatAdmin/node_modules/egg-logrotator/config/config.default.js",
+    "maxFiles": "/home/molei/www/wechatAdmin/node_modules/egg-logrotator/config/config.default.js",
+    "rotateDuration": "/home/molei/www/wechatAdmin/node_modules/egg-logrotator/config/config.default.js",
+    "maxDays": "/home/molei/www/wechatAdmin/node_modules/egg-logrotator/config/config.default.js"
+  },
+  "nunjucks": {
+    "autoescape": "/home/molei/www/wechatAdmin/node_modules/egg-view-nunjucks/config/config.default.js",
+    "throwOnUndefined": "/home/molei/www/wechatAdmin/node_modules/egg-view-nunjucks/config/config.default.js",
+    "trimBlocks": "/home/molei/www/wechatAdmin/node_modules/egg-view-nunjucks/config/config.default.js",
+    "lstripBlocks": "/home/molei/www/wechatAdmin/node_modules/egg-view-nunjucks/config/config.default.js",
+    "cache": "/home/molei/www/wechatAdmin/node_modules/egg-view-nunjucks/config/config.local.js"
+  },
+  "env": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+  "name": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+  "proxy": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+  "protocolHeaders": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+  "ipHeaders": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+  "hostHeaders": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+  "pkg": {
+    "name": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+    "version": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+    "description": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+    "private": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+    "dependencies": {
+      "antd": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "egg": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "egg-scripts": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "egg-static": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "egg-view-nunjucks": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "less": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "react": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "react-dom": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "react-router-dom": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js"
+    },
+    "devDependencies": {
+      "autod": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "autod-egg": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "autoprefixer": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "babel": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "babel-cli": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "babel-core": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "babel-loader": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "babel-plugin-import": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "babel-plugin-transform-runtime": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "babel-polyfill": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "babel-preset-env": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "babel-preset-react": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "babel-preset-stage-0": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "bundle-loader": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "clean-webpack-plugin": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "css-loader": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "egg-bin": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "egg-ci": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "egg-mock": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "eslint": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "eslint-config-egg": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "extract-text-webpack-plugin": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "file-loader": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "html-webpack-plugin": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "less-loader": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "postcss-loader": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "style-loader": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "url-loader": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "webpack": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "webpack-cli": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "webstorm-disable-index": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js"
+    },
+    "engines": {
+      "node": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js"
+    },
+    "scripts": {
+      "start": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "stop": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "dev": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "debug": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "test": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "test-local": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "cov": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "lint": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "ci": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "autod": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "webpack": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js"
+    },
+    "ci": {
+      "version": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js"
+    },
+    "repository": {
+      "type": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "url": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js"
+    },
+    "author": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+    "license": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js"
+  },
+  "baseDir": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+  "HOME": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+  "rundir": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+  "dump": {
+    "ignore": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js"
+  },
+  "confusedConfigurations": {
+    "bodyparser": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+    "notFound": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+    "sitefile": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+    "middlewares": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+    "httpClient": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js"
+  },
+  "notfound": {
+    "pageUrl": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js"
+  },
+  "siteFile": {
+    "/favicon.ico": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js"
+  },
+  "bodyParser": {
+    "enable": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+    "encoding": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+    "formLimit": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+    "jsonLimit": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+    "strict": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+    "queryString": {
+      "arrayLimit": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "depth": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "parameterLimit": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js"
+    }
+  },
+  "logger": {
+    "dir": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+    "encoding": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+    "env": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+    "level": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+    "consoleLevel": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+    "disableConsoleAfterReady": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+    "outputJSON": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+    "buffer": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+    "appLogName": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+    "coreLogName": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+    "agentLogName": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+    "errorLogName": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+    "coreLogger": {
+      "consoleLevel": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.local.js"
+    },
+    "allowDebugAtProd": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js"
+  },
+  "httpclient": {
+    "enableDNSCache": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+    "dnsCacheMaxLength": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+    "dnsCacheMaxAge": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+    "request": {
+      "timeout": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js"
+    },
+    "httpAgent": {
+      "keepAlive": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "freeSocketKeepAliveTimeout": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "maxSockets": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js"
+    },
+    "httpsAgent": {
+      "keepAlive": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "freeSocketKeepAliveTimeout": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "maxSockets": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js"
+    }
+  },
+  "meta": {
+    "enable": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+    "logging": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js"
+  },
+  "coreMiddleware": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+  "workerStartTimeout": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+  "cluster": {
+    "listen": {
+      "path": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "port": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js",
+      "hostname": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js"
+    }
+  },
+  "clusterClient": {
+    "responseTimeout": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js"
+  },
+  "onClientError": "/home/molei/www/wechatAdmin/node_modules/egg/config/config.default.js"
+}
