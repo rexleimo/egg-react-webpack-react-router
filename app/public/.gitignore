@@ -1,2 +1,6 @@
 bundle.js
 vendor.bundle.js
+/uploads
+vendor.bundle.js.map
+style.css
+bundle.js.map

@@ -1,0 +1,35 @@
+@loginTitleHd: 60px;
+@loginHd: 260px;
+.login {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 400px;
+    height: @loginHd;
+    border-radius: 4px;
+    box-shadow: 0px 0px 1px rgba(15, 15, 15, .3);
+    .login-title {
+        text-align: center;
+        height: @loginTitleHd;
+        line-height: @loginTitleHd;
+    }
+    .login-bd {
+        padding: 20px;
+    }
+}
+
+.login::after {
+    content: '';
+    position: absolute;
+    width: 99.999%;
+    height: @loginTitleHd;
+    background-color: rgba(15, 15, 15, .3);
+    top: 0px;
+    left: 0px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    z-index: -1;
+}

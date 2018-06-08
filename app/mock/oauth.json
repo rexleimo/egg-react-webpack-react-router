@@ -1,0 +1,40 @@
+{
+  "client": {
+    "id": 1,
+    "clientId": "my_app",
+    "clientSecret": "my_secret",
+    "redirectUris": [
+      "http://implements.io"
+    ],
+    "refreshTokenLifetime": 0,
+    "accessTokenLifetime": 0,
+    "grants": [
+      "password",
+      "authorization_code",
+      "refresh_token"
+    ]
+  },
+  "user": {
+    "id": 1,
+    "username": "egg-oauth2-server",
+    "password": "azard"
+  },
+  "token": {
+    "accessToken": "9423635a4f3b23ae494efb5d03b2a8a6ac4f26aa",
+    "accessTokenExpiresAt": "2018-05-18T08:35:43.964Z",
+    "refreshToken": "ff5792776a9bcbfb369ca8836e73248af1bcd099",
+    "refreshTokenExpiresAt": "2018-06-01T07:35:43.964Z",
+    "user": {
+      "userId": 1
+    },
+    "client": {
+      "id": "5afe4d0587fea604a4228a17"
+    }
+  },
+  "authorizationCode": {
+    "code": "111",
+    "expiresAt": "1000445",
+    "redirectUri": "http://baidu.com",
+    "scope": "google"
+  }
+}

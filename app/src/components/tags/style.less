@@ -1,0 +1,32 @@
+.tag-group {
+    position: relative;
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        content: '';
+        border-bottom: 1px solid #e8e8e8;
+    }
+}
+
+.tag-item {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    padding: 12px 24px;
+    &.active {
+        color: #1890ff;
+    }
+}
+
+.tag-link-bar {
+    transition: all .375s 0s ease-in-out;
+    position: absolute;
+    left: 0px;
+    bottom: 1px;
+    box-sizing: border-box;
+    height: 2px;
+    background-color: #1890ff;
+}

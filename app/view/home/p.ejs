@@ -1,0 +1,82 @@
+<%- include("../components/header.ejs") %>
+<link rel="stylesheet" href="https://cdn.bootcss.com/social-share.js/1.0.16/css/share.min.css">
+<style>
+    .social-share .icon-wechat .wechat-qrcode{
+        top: 40px;
+        box-shadow: 0px -2px 10px #aaa;
+    }
+    .social-share .icon-wechat .wechat-qrcode::after{
+        border-width: 6px 6px 6px 8px;
+        top: -14px;
+        border-color: transparent transparent #fff transparent;
+    }
+</style>
+
+<div class="wapper">
+
+  <div class="content">
+
+    <div class="left-main">
+      <div class="card">
+
+        <div class="article-hd">
+            <h2 class="article-title">
+                <%= data.title %>
+            </h2>
+
+            <div class="article-options" style="margin-bottom:20px;">
+                <time style="float: left;padding-top: 7px;">
+                    <span class="iconfont icon-time"></span>
+                     <%= helper.ago(data.created_at) %>
+                </time>
+
+                <div style="display: inline-block;" class="share-component" data-disabled="google,twitter,facebook,diandian,tencent" data-description="Share.js - 一键分享到微博，QQ空间，腾讯微博，人人，豆瓣"></div>
+
+                <div class="clear"></div>
+            </div>
+            
+            <div class="tag-group">
+                <% var tags = data.tags.split(',') %>
+                所属于标签：<% tags.forEach(function(val,i){ %> 
+                    <span class="tag"><%= val %></span>
+                <% })%> 
+            </div>
+
+        </div>
+
+        <hr/>
+
+        <div class="article-bd"> 
+            <%- data.content %>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="right-main">
+      <div class="card">
+
+        <div class="article-about">
+            相关文章
+        </div>
+        <hr/>
+        
+        <div class="article-about-here">
+            <% lists.forEach((value) => { %>
+                <a href="/p/<%= value._id %>" class="article-about-item">
+                    <p><%= value.title %></p>
+                </a>
+            <% }) %>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="clear"></div>
+
+  </div>
+
+</div>
+
+<%- include("../components/footer.ejs") %>
+<script src="https://cdn.bootcss.com/social-share.js/1.0.16/js/social-share.min.js"></script>

@@ -1,0 +1,39 @@
+.media-img-picker {
+  padding-left: 0px;
+  list-style: none;
+  .media-img-picker__item {
+    cursor: pointer;
+    position: relative;
+    width: 160px;
+    margin: 0 20px 30px 0;
+    text-align: center;
+    &:hover {
+      .media-img-picker__img-thumb{
+        background-color: #EAFFEA;
+      }
+    }
+    .media-img-picker__img-thumb {
+      display: block;
+      width: 100%;
+      height: auto;
+      background-size: contain;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      padding-bottom: 100%;
+      border: 1px solid transparent;
+      border-radius: 3px;
+      overflow: hidden;
+    }
+    .media-img-picker__img-title {
+      display: block;
+      width: auto;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      word-wrap: normal;
+      font-weight: 400;
+      padding: 10px 10px 0;
+      line-height: 36px;
+    }
+  }
+}

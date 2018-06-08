@@ -1,0 +1,127 @@
+.flex {
+    display: flex;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-3 {
+    flex: 2;
+    padding-left: 24px;
+}
+
+.wechat-menu {
+    position: absolute;
+    bottom: 0;
+    width: 101%;
+    height: 45px;
+    border-top: 1px solid #e8e8e8;
+    box-shadow: rgba(15, 15, 15, .3);
+    box-sizing: border-box;
+    z-index: 1;
+    .wechat-menu-itme {
+        position: relative;
+        line-height: 45px;
+        text-align: center;
+        margin-left: -1px;
+        cursor: pointer;
+        border-collapse: collapse;
+        .wechat-menu-sub {
+            display: flex;
+            flex-direction: column-reverse;
+            /*这个属性就是在水平方向上反转*/
+            position: absolute;
+            width: 100%;
+            bottom: 100%;
+            .wechat-menu-sub-btn {
+                width: 100%;
+                position: relative;
+                cursor: pointer;
+                border: 1px solid #e8e8e8;
+                border-collapse: collapse;
+            }
+        }
+    }
+}
+
+.wechat-menu-itme:first-child {
+    border-right: #e8e8e8 1px solid;
+}
+
+.wechat-menu-itme:last-child {
+    border-left: #e8e8e8 1px solid;
+}
+
+.wechat-menu-content {
+    /*编辑内容*/
+    display: none;
+    position: relative;
+    margin-top: 25px;
+    .wechat-menu-hd {
+        position: relative;
+        min-height: 45px;
+        box-shadow: 0px 0px 1px rgba(15, 15, 15, .3);
+        background-color: #e8e8e8;
+        .wechat-menu-tool {
+            font-size: 16px;
+            display: inline-block;
+            padding: 15px;
+            cursor: pointer;
+            &.active {
+                color: rgb(33, 150, 274);
+            }
+            .iconfont {
+                font-size: 26px;
+                vertical-align: middle;
+                margin-right: 5px;
+            }
+        }
+    }
+    .wechat-menu-bd {
+        padding: 15px;
+        border: 1px solid #e8e8e8;
+        border-top: 0px;
+        min-height: 292px;
+    }
+}
+
+.wechat-media-tools {
+    position: relative;
+    text-align: center;
+    .item {
+        cursor: pointer;
+        display: inline-block;
+        margin-top: 80px;
+        .anticon {
+            font-size: 36px;
+            display: block;
+        }
+    }
+}
+
+.wechat-menu-view {
+    display: none;
+    .wechat-menu-bd {
+        border-top: 1px solid #e8e8e8;
+    }
+}
+
+.active {
+    display: block;
+}
+
+.active-op {
+    opacity: 1;
+}
+
+.wechat-media-select-tools {
+    .wechat-modal-meterials-col {
+        width: 360px;
+        .card_appmsg {
+            .card_appmsg_title {
+                line-height: 25px;
+            }
+        }
+    }
+}

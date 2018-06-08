@@ -1,0 +1,82 @@
+.news-tools {
+    display: flex; // max-width: 1000px;
+}
+
+.news-items {
+    width: 220px;
+    margin-right: 30px;
+}
+
+.news-content {
+    flex: 1px;
+    max-width: 800px;
+}
+
+.news-material {
+    margin-left: 30px;
+    width: 200px;
+}
+
+.news-item-select {
+    position: relative;
+    margin-bottom: 10px;
+    cursor: pointer;
+    .cover {
+        height: 120px;
+        width: 100%;
+        background-size: cover;
+        background-position: center center;
+    }
+    .title {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        height: 25px;
+        line-height: 25px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        background-color: rgba(15, 15, 15, .6);
+    }
+    &.active {
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 5px solid #1890ff;
+        }
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 5px solid #e8e8e8;
+    }
+}
+
+.news-puls {
+    position: relative;
+    width: 100%;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    border: 1px dashed #e8e8e8;
+    cursor: pointer;
+    .iconfont {
+        font-size: 50px;
+    }
+}
+
+.RichEditor-root {
+    img {
+        max-width: 100%;
+    }
+}

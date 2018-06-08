@@ -1,0 +1,2651 @@
+2018-05-24 09:29:47,922 WARN 8220 [-/::1/-/37ms POST /api/news/list] nodejs.invalid_token: Invalid token: access token has expired
+    at new InvalidTokenError (G:\wechatAdmin\node_modules\oauth2-server\lib\errors\invalid-token-error.js:25:14)
+    at AuthenticateHandler.validateAccessToken (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\authenticate-handler.js:224:11)
+    at AuthenticateHandler.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\authenticate-handler.js:74:19)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at AuthenticateHandler.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\authenticate-handler.js:73:6)
+    at OAuth2Server.authenticate (G:\wechatAdmin\node_modules\oauth2-server\lib\server.js:43:6)
+    at OAuth2.execute (G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:86:41)
+    at G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:108:32
+    at auth (G:\wechatAdmin\app\middleware\auth.js:14:57)
+    at fn (G:\wechatAdmin\node_modules\egg-core\lib\loader\mixin\middleware.js:105:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at historyFallback (G:\wechatAdmin\app\middleware\historyFallback.js:5:15)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at i18n (G:\wechatAdmin\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dta (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xframe (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xssProtection (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at nosniff (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\nosniff.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at noopen (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at notAllow (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\methodnoallow.js:20:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at G:\wechatAdmin\node_modules\koa-compose\index.js:34:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at session (G:\wechatAdmin\node_modules\koa-session\index.js:41:13)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at overrideMethod (G:\wechatAdmin\node_modules\koa-override\index.js:38:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+statusCode: 401
+status: 401
+code: 401
+message: 'Invalid token: access token has expired'
+name: 'invalid_token'
+pid: 8220
+hostname: PC-20180416IFIT
+
+2018-05-24 09:29:48,413 WARN 8220 [-/127.0.0.1/-/24ms POST /oauth2/token] nodejs.invalid_grant: Invalid grant: user credentials are invalid
+    at new InvalidGrantError (G:\wechatAdmin\node_modules\oauth2-server\lib\errors\invalid-grant-error.js:27:14)
+    at G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:94:15
+From previous event:
+    at PasswordGrantType.getUser (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:92:6)
+    at PasswordGrantType.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:63:19)
+From previous event:
+    at PasswordGrantType.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:62:6)
+    at TokenHandler.handleGrantType (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:231:6)
+    at TokenHandler.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:93:19)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at TokenHandler.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:92:6)
+    at OAuth2Server.token (G:\wechatAdmin\node_modules\oauth2-server\lib\server.js:75:6)
+    at OAuth2.execute (G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:86:41)
+    at G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:96:32
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at G:\wechatAdmin\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at fn (G:\wechatAdmin\node_modules\egg-core\lib\loader\mixin\middleware.js:104:29)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at historyFallback (G:\wechatAdmin\app\middleware\historyFallback.js:5:15)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at i18n (G:\wechatAdmin\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dta (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xframe (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xssProtection (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at nosniff (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\nosniff.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at noopen (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at notAllow (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\methodnoallow.js:20:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at G:\wechatAdmin\node_modules\koa-compose\index.js:34:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+statusCode: 400
+status: 400
+code: 400
+message: 'Invalid grant: user credentials are invalid'
+name: 'invalid_grant'
+pid: 8220
+hostname: PC-20180416IFIT
+
+2018-05-24 10:32:52,699 WARN 12420 [-/::1/-/19ms POST /api/admin/user/list] nodejs.invalid_token: Invalid token: access token has expired
+    at new InvalidTokenError (G:\wechatAdmin\node_modules\oauth2-server\lib\errors\invalid-token-error.js:25:14)
+    at AuthenticateHandler.validateAccessToken (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\authenticate-handler.js:224:11)
+    at AuthenticateHandler.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\authenticate-handler.js:74:19)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at AuthenticateHandler.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\authenticate-handler.js:73:6)
+    at OAuth2Server.authenticate (G:\wechatAdmin\node_modules\oauth2-server\lib\server.js:43:6)
+    at OAuth2.execute (G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:86:41)
+    at G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:108:32
+    at auth (G:\wechatAdmin\app\middleware\auth.js:14:57)
+    at fn (G:\wechatAdmin\node_modules\egg-core\lib\loader\mixin\middleware.js:105:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at historyFallback (G:\wechatAdmin\app\middleware\historyFallback.js:5:15)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at i18n (G:\wechatAdmin\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dta (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xframe (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xssProtection (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at nosniff (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\nosniff.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at noopen (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at notAllow (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\methodnoallow.js:20:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at G:\wechatAdmin\node_modules\koa-compose\index.js:34:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at session (G:\wechatAdmin\node_modules\koa-session\index.js:41:13)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at overrideMethod (G:\wechatAdmin\node_modules\koa-override\index.js:38:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+statusCode: 401
+status: 401
+code: 401
+message: 'Invalid token: access token has expired'
+name: 'invalid_token'
+pid: 12420
+hostname: PC-20180416IFIT
+
+2018-05-24 10:32:53,328 WARN 12420 [-/127.0.0.1/-/40ms POST /oauth2/token] nodejs.invalid_grant: Invalid grant: user credentials are invalid
+    at new InvalidGrantError (G:\wechatAdmin\node_modules\oauth2-server\lib\errors\invalid-grant-error.js:27:14)
+    at G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:94:15
+From previous event:
+    at PasswordGrantType.getUser (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:92:6)
+    at PasswordGrantType.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:63:19)
+From previous event:
+    at PasswordGrantType.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:62:6)
+    at TokenHandler.handleGrantType (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:231:6)
+    at TokenHandler.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:93:19)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at TokenHandler.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:92:6)
+    at OAuth2Server.token (G:\wechatAdmin\node_modules\oauth2-server\lib\server.js:75:6)
+    at OAuth2.execute (G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:86:41)
+    at G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:96:32
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at G:\wechatAdmin\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at fn (G:\wechatAdmin\node_modules\egg-core\lib\loader\mixin\middleware.js:104:29)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at historyFallback (G:\wechatAdmin\app\middleware\historyFallback.js:5:15)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at i18n (G:\wechatAdmin\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dta (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xframe (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xssProtection (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at nosniff (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\nosniff.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at noopen (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at notAllow (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\methodnoallow.js:20:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at G:\wechatAdmin\node_modules\koa-compose\index.js:34:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+statusCode: 400
+status: 400
+code: 400
+message: 'Invalid grant: user credentials are invalid'
+name: 'invalid_grant'
+pid: 12420
+hostname: PC-20180416IFIT
+
+2018-05-24 14:31:52,399 WARN 10644 [-/::1/-/63ms POST /api/admin/user/list] nodejs.invalid_token: Invalid token: access token is invalid
+    at new InvalidTokenError (G:\wechatAdmin\node_modules\oauth2-server\lib\errors\invalid-token-error.js:25:14)
+    at G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\authenticate-handler.js:203:15
+From previous event:
+    at AuthenticateHandler.getAccessToken (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\authenticate-handler.js:201:6)
+    at AuthenticateHandler.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\authenticate-handler.js:71:19)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at AuthenticateHandler.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\authenticate-handler.js:70:6)
+    at OAuth2Server.authenticate (G:\wechatAdmin\node_modules\oauth2-server\lib\server.js:43:6)
+    at OAuth2.execute (G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:86:41)
+    at G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:108:32
+    at auth (G:\wechatAdmin\app\middleware\auth.js:14:57)
+    at fn (G:\wechatAdmin\node_modules\egg-core\lib\loader\mixin\middleware.js:105:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at historyFallback (G:\wechatAdmin\app\middleware\historyFallback.js:5:15)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at i18n (G:\wechatAdmin\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dta (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xframe (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xssProtection (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at nosniff (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\nosniff.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at noopen (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at notAllow (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\methodnoallow.js:20:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at G:\wechatAdmin\node_modules\koa-compose\index.js:34:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at session (G:\wechatAdmin\node_modules\koa-session\index.js:41:13)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at overrideMethod (G:\wechatAdmin\node_modules\koa-override\index.js:38:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at bodyParser (G:\wechatAdmin\node_modules\koa-bodyparser\index.js:86:11)
+statusCode: 401
+status: 401
+code: 401
+message: 'Invalid token: access token is invalid'
+name: 'invalid_token'
+pid: 10644
+hostname: PC-20180416IFIT
+
+2018-05-24 14:31:53,244 WARN 10644 [-/127.0.0.1/-/49ms POST /oauth2/token] nodejs.invalid_grant: Invalid grant: user credentials are invalid
+    at new InvalidGrantError (G:\wechatAdmin\node_modules\oauth2-server\lib\errors\invalid-grant-error.js:27:14)
+    at G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:94:15
+From previous event:
+    at PasswordGrantType.getUser (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:92:6)
+    at PasswordGrantType.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:63:19)
+From previous event:
+    at PasswordGrantType.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:62:6)
+    at TokenHandler.handleGrantType (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:231:6)
+    at TokenHandler.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:93:19)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at TokenHandler.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:92:6)
+    at OAuth2Server.token (G:\wechatAdmin\node_modules\oauth2-server\lib\server.js:75:6)
+    at OAuth2.execute (G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:86:41)
+    at G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:96:32
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at G:\wechatAdmin\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at fn (G:\wechatAdmin\node_modules\egg-core\lib\loader\mixin\middleware.js:104:29)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at historyFallback (G:\wechatAdmin\app\middleware\historyFallback.js:5:15)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at i18n (G:\wechatAdmin\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dta (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xframe (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xssProtection (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at nosniff (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\nosniff.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at noopen (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at notAllow (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\methodnoallow.js:20:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at G:\wechatAdmin\node_modules\koa-compose\index.js:34:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+statusCode: 400
+status: 400
+code: 400
+message: 'Invalid grant: user credentials are invalid'
+name: 'invalid_grant'
+pid: 10644
+hostname: PC-20180416IFIT
+
+2018-05-24 14:35:19,489 WARN 11588 [-/::1/-/7ms POST /oauth2/logout] nodejs.invalid_token: Invalid token: access token is invalid
+    at new InvalidTokenError (G:\wechatAdmin\node_modules\oauth2-server\lib\errors\invalid-token-error.js:25:14)
+    at G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\authenticate-handler.js:203:15
+From previous event:
+    at AuthenticateHandler.getAccessToken (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\authenticate-handler.js:201:6)
+    at AuthenticateHandler.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\authenticate-handler.js:71:19)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at AuthenticateHandler.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\authenticate-handler.js:70:6)
+    at OAuth2Server.authenticate (G:\wechatAdmin\node_modules\oauth2-server\lib\server.js:43:6)
+    at OAuth2.execute (G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:86:41)
+    at G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:108:32
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at G:\wechatAdmin\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at fn (G:\wechatAdmin\node_modules\egg-core\lib\loader\mixin\middleware.js:104:29)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at historyFallback (G:\wechatAdmin\app\middleware\historyFallback.js:5:15)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at i18n (G:\wechatAdmin\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dta (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xframe (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xssProtection (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at nosniff (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\nosniff.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at noopen (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at notAllow (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\methodnoallow.js:20:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at G:\wechatAdmin\node_modules\koa-compose\index.js:34:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+statusCode: 401
+status: 401
+code: 401
+message: 'Invalid token: access token is invalid'
+name: 'invalid_token'
+pid: 11588
+hostname: PC-20180416IFIT
+
+2018-05-24 14:35:20,225 WARN 11588 [-/127.0.0.1/-/32ms POST /oauth2/token] nodejs.invalid_grant: Invalid grant: user credentials are invalid
+    at new InvalidGrantError (G:\wechatAdmin\node_modules\oauth2-server\lib\errors\invalid-grant-error.js:27:14)
+    at G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:94:15
+From previous event:
+    at PasswordGrantType.getUser (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:92:6)
+    at PasswordGrantType.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:63:19)
+From previous event:
+    at PasswordGrantType.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:62:6)
+    at TokenHandler.handleGrantType (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:231:6)
+    at TokenHandler.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:93:19)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at TokenHandler.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:92:6)
+    at OAuth2Server.token (G:\wechatAdmin\node_modules\oauth2-server\lib\server.js:75:6)
+    at OAuth2.execute (G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:86:41)
+    at G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:96:32
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at G:\wechatAdmin\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at fn (G:\wechatAdmin\node_modules\egg-core\lib\loader\mixin\middleware.js:104:29)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at historyFallback (G:\wechatAdmin\app\middleware\historyFallback.js:5:15)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at i18n (G:\wechatAdmin\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dta (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xframe (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xssProtection (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at nosniff (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\nosniff.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at noopen (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at notAllow (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\methodnoallow.js:20:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at G:\wechatAdmin\node_modules\koa-compose\index.js:34:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+statusCode: 400
+status: 400
+code: 400
+message: 'Invalid grant: user credentials are invalid'
+name: 'invalid_grant'
+pid: 11588
+hostname: PC-20180416IFIT
+
+2018-05-24 14:36:38,094 WARN 7448 [-/::1/-/15ms POST /oauth2/logout] nodejs.invalid_token: Invalid token: access token is invalid
+    at new InvalidTokenError (G:\wechatAdmin\node_modules\oauth2-server\lib\errors\invalid-token-error.js:25:14)
+    at G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\authenticate-handler.js:203:15
+From previous event:
+    at AuthenticateHandler.getAccessToken (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\authenticate-handler.js:201:6)
+    at AuthenticateHandler.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\authenticate-handler.js:71:19)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at AuthenticateHandler.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\authenticate-handler.js:70:6)
+    at OAuth2Server.authenticate (G:\wechatAdmin\node_modules\oauth2-server\lib\server.js:43:6)
+    at OAuth2.execute (G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:86:41)
+    at G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:108:32
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at G:\wechatAdmin\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at fn (G:\wechatAdmin\node_modules\egg-core\lib\loader\mixin\middleware.js:104:29)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at historyFallback (G:\wechatAdmin\app\middleware\historyFallback.js:5:15)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at i18n (G:\wechatAdmin\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dta (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xframe (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xssProtection (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at nosniff (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\nosniff.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at noopen (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at notAllow (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\methodnoallow.js:20:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at G:\wechatAdmin\node_modules\koa-compose\index.js:34:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+statusCode: 401
+status: 401
+code: 401
+message: 'Invalid token: access token is invalid'
+name: 'invalid_token'
+pid: 7448
+hostname: PC-20180416IFIT
+
+2018-05-24 14:36:38,902 WARN 7448 [-/127.0.0.1/-/43ms POST /oauth2/token] nodejs.invalid_grant: Invalid grant: user credentials are invalid
+    at new InvalidGrantError (G:\wechatAdmin\node_modules\oauth2-server\lib\errors\invalid-grant-error.js:27:14)
+    at G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:94:15
+From previous event:
+    at PasswordGrantType.getUser (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:92:6)
+    at PasswordGrantType.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:63:19)
+From previous event:
+    at PasswordGrantType.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:62:6)
+    at TokenHandler.handleGrantType (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:231:6)
+    at TokenHandler.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:93:19)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at TokenHandler.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:92:6)
+    at OAuth2Server.token (G:\wechatAdmin\node_modules\oauth2-server\lib\server.js:75:6)
+    at OAuth2.execute (G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:86:41)
+    at G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:96:32
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at G:\wechatAdmin\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at fn (G:\wechatAdmin\node_modules\egg-core\lib\loader\mixin\middleware.js:104:29)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at historyFallback (G:\wechatAdmin\app\middleware\historyFallback.js:5:15)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at i18n (G:\wechatAdmin\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dta (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xframe (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xssProtection (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at nosniff (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\nosniff.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at noopen (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at notAllow (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\methodnoallow.js:20:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at G:\wechatAdmin\node_modules\koa-compose\index.js:34:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+statusCode: 400
+status: 400
+code: 400
+message: 'Invalid grant: user credentials are invalid'
+name: 'invalid_grant'
+pid: 7448
+hostname: PC-20180416IFIT
+
+2018-05-24 14:37:25,615 WARN 8480 [-/::1/-/9ms POST /api/role/index] nodejs.invalid_token: Invalid token: access token is invalid
+    at new InvalidTokenError (G:\wechatAdmin\node_modules\oauth2-server\lib\errors\invalid-token-error.js:25:14)
+    at G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\authenticate-handler.js:203:15
+From previous event:
+    at AuthenticateHandler.getAccessToken (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\authenticate-handler.js:201:6)
+    at AuthenticateHandler.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\authenticate-handler.js:71:19)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at AuthenticateHandler.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\authenticate-handler.js:70:6)
+    at OAuth2Server.authenticate (G:\wechatAdmin\node_modules\oauth2-server\lib\server.js:43:6)
+    at OAuth2.execute (G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:86:41)
+    at G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:108:32
+    at auth (G:\wechatAdmin\app\middleware\auth.js:14:57)
+    at fn (G:\wechatAdmin\node_modules\egg-core\lib\loader\mixin\middleware.js:105:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at historyFallback (G:\wechatAdmin\app\middleware\historyFallback.js:5:15)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at i18n (G:\wechatAdmin\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dta (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xframe (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xssProtection (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at nosniff (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\nosniff.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at noopen (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at notAllow (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\methodnoallow.js:20:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at G:\wechatAdmin\node_modules\koa-compose\index.js:34:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at session (G:\wechatAdmin\node_modules\koa-session\index.js:41:13)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at overrideMethod (G:\wechatAdmin\node_modules\koa-override\index.js:38:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at bodyParser (G:\wechatAdmin\node_modules\koa-bodyparser\index.js:86:11)
+statusCode: 401
+status: 401
+code: 401
+message: 'Invalid token: access token is invalid'
+name: 'invalid_token'
+pid: 8480
+hostname: PC-20180416IFIT
+
+2018-05-24 14:37:26,376 WARN 8480 [-/127.0.0.1/-/17ms POST /oauth2/token] nodejs.invalid_grant: Invalid grant: user credentials are invalid
+    at new InvalidGrantError (G:\wechatAdmin\node_modules\oauth2-server\lib\errors\invalid-grant-error.js:27:14)
+    at G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:94:15
+From previous event:
+    at PasswordGrantType.getUser (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:92:6)
+    at PasswordGrantType.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:63:19)
+From previous event:
+    at PasswordGrantType.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:62:6)
+    at TokenHandler.handleGrantType (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:231:6)
+    at TokenHandler.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:93:19)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at TokenHandler.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:92:6)
+    at OAuth2Server.token (G:\wechatAdmin\node_modules\oauth2-server\lib\server.js:75:6)
+    at OAuth2.execute (G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:86:41)
+    at G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:96:32
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at G:\wechatAdmin\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at fn (G:\wechatAdmin\node_modules\egg-core\lib\loader\mixin\middleware.js:104:29)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at historyFallback (G:\wechatAdmin\app\middleware\historyFallback.js:5:15)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at i18n (G:\wechatAdmin\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dta (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xframe (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xssProtection (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at nosniff (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\nosniff.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at noopen (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at notAllow (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\methodnoallow.js:20:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at G:\wechatAdmin\node_modules\koa-compose\index.js:34:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+statusCode: 400
+status: 400
+code: 400
+message: 'Invalid grant: user credentials are invalid'
+name: 'invalid_grant'
+pid: 8480
+hostname: PC-20180416IFIT
+
+2018-05-24 14:37:47,540 WARN 9088 [-/::1/-/8ms POST /api/access/all] nodejs.invalid_token: Invalid token: access token is invalid
+    at new InvalidTokenError (G:\wechatAdmin\node_modules\oauth2-server\lib\errors\invalid-token-error.js:25:14)
+    at G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\authenticate-handler.js:203:15
+From previous event:
+    at AuthenticateHandler.getAccessToken (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\authenticate-handler.js:201:6)
+    at AuthenticateHandler.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\authenticate-handler.js:71:19)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at AuthenticateHandler.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\authenticate-handler.js:70:6)
+    at OAuth2Server.authenticate (G:\wechatAdmin\node_modules\oauth2-server\lib\server.js:43:6)
+    at OAuth2.execute (G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:86:41)
+    at G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:108:32
+    at auth (G:\wechatAdmin\app\middleware\auth.js:14:57)
+    at fn (G:\wechatAdmin\node_modules\egg-core\lib\loader\mixin\middleware.js:105:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at historyFallback (G:\wechatAdmin\app\middleware\historyFallback.js:5:15)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at i18n (G:\wechatAdmin\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dta (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xframe (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xssProtection (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at nosniff (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\nosniff.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at noopen (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at notAllow (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\methodnoallow.js:20:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at G:\wechatAdmin\node_modules\koa-compose\index.js:34:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at session (G:\wechatAdmin\node_modules\koa-session\index.js:41:13)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at overrideMethod (G:\wechatAdmin\node_modules\koa-override\index.js:38:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at bodyParser (G:\wechatAdmin\node_modules\koa-bodyparser\index.js:86:11)
+statusCode: 401
+status: 401
+code: 401
+message: 'Invalid token: access token is invalid'
+name: 'invalid_token'
+pid: 9088
+hostname: PC-20180416IFIT
+
+2018-05-24 14:37:48,218 WARN 9088 [-/127.0.0.1/-/41ms POST /oauth2/token] nodejs.invalid_grant: Invalid grant: user credentials are invalid
+    at new InvalidGrantError (G:\wechatAdmin\node_modules\oauth2-server\lib\errors\invalid-grant-error.js:27:14)
+    at G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:94:15
+From previous event:
+    at PasswordGrantType.getUser (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:92:6)
+    at PasswordGrantType.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:63:19)
+From previous event:
+    at PasswordGrantType.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:62:6)
+    at TokenHandler.handleGrantType (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:231:6)
+    at TokenHandler.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:93:19)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at TokenHandler.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:92:6)
+    at OAuth2Server.token (G:\wechatAdmin\node_modules\oauth2-server\lib\server.js:75:6)
+    at OAuth2.execute (G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:86:41)
+    at G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:96:32
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at G:\wechatAdmin\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at fn (G:\wechatAdmin\node_modules\egg-core\lib\loader\mixin\middleware.js:104:29)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at historyFallback (G:\wechatAdmin\app\middleware\historyFallback.js:5:15)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at i18n (G:\wechatAdmin\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dta (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xframe (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xssProtection (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at nosniff (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\nosniff.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at noopen (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at notAllow (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\methodnoallow.js:20:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at G:\wechatAdmin\node_modules\koa-compose\index.js:34:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+statusCode: 400
+status: 400
+code: 400
+message: 'Invalid grant: user credentials are invalid'
+name: 'invalid_grant'
+pid: 9088
+hostname: PC-20180416IFIT
+
+2018-05-24 14:38:27,936 WARN 9088 [-/::1/-/5ms POST /api/role/index] nodejs.invalid_token: Invalid token: access token is invalid
+    at new InvalidTokenError (G:\wechatAdmin\node_modules\oauth2-server\lib\errors\invalid-token-error.js:25:14)
+    at G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\authenticate-handler.js:203:15
+From previous event:
+    at AuthenticateHandler.getAccessToken (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\authenticate-handler.js:201:6)
+    at AuthenticateHandler.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\authenticate-handler.js:71:19)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at AuthenticateHandler.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\authenticate-handler.js:70:6)
+    at OAuth2Server.authenticate (G:\wechatAdmin\node_modules\oauth2-server\lib\server.js:43:6)
+    at OAuth2.execute (G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:86:41)
+    at G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:108:32
+    at auth (G:\wechatAdmin\app\middleware\auth.js:14:57)
+    at fn (G:\wechatAdmin\node_modules\egg-core\lib\loader\mixin\middleware.js:105:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at historyFallback (G:\wechatAdmin\app\middleware\historyFallback.js:5:15)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at i18n (G:\wechatAdmin\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dta (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xframe (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xssProtection (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at nosniff (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\nosniff.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at noopen (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at notAllow (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\methodnoallow.js:20:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at G:\wechatAdmin\node_modules\koa-compose\index.js:34:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at session (G:\wechatAdmin\node_modules\koa-session\index.js:41:13)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at overrideMethod (G:\wechatAdmin\node_modules\koa-override\index.js:38:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at bodyParser (G:\wechatAdmin\node_modules\koa-bodyparser\index.js:86:11)
+statusCode: 401
+status: 401
+code: 401
+message: 'Invalid token: access token is invalid'
+name: 'invalid_token'
+pid: 9088
+hostname: PC-20180416IFIT
+
+2018-05-24 14:38:28,570 WARN 9088 [-/127.0.0.1/-/8ms POST /oauth2/token] nodejs.invalid_grant: Invalid grant: user credentials are invalid
+    at new InvalidGrantError (G:\wechatAdmin\node_modules\oauth2-server\lib\errors\invalid-grant-error.js:27:14)
+    at G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:94:15
+From previous event:
+    at PasswordGrantType.getUser (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:92:6)
+    at PasswordGrantType.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:63:19)
+From previous event:
+    at PasswordGrantType.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:62:6)
+    at TokenHandler.handleGrantType (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:231:6)
+    at TokenHandler.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:93:19)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at TokenHandler.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:92:6)
+    at OAuth2Server.token (G:\wechatAdmin\node_modules\oauth2-server\lib\server.js:75:6)
+    at OAuth2.execute (G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:86:41)
+    at G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:96:32
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at G:\wechatAdmin\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at fn (G:\wechatAdmin\node_modules\egg-core\lib\loader\mixin\middleware.js:104:29)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at historyFallback (G:\wechatAdmin\app\middleware\historyFallback.js:5:15)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at i18n (G:\wechatAdmin\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dta (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xframe (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xssProtection (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at nosniff (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\nosniff.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at noopen (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at notAllow (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\methodnoallow.js:20:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at G:\wechatAdmin\node_modules\koa-compose\index.js:34:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+statusCode: 400
+status: 400
+code: 400
+message: 'Invalid grant: user credentials are invalid'
+name: 'invalid_grant'
+pid: 9088
+hostname: PC-20180416IFIT
+
+2018-05-24 14:39:38,067 WARN 12336 [-/127.0.0.1/-/57ms POST /oauth2/token] nodejs.invalid_grant: Invalid grant: user credentials are invalid
+    at new InvalidGrantError (G:\wechatAdmin\node_modules\oauth2-server\lib\errors\invalid-grant-error.js:27:14)
+    at G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:94:15
+From previous event:
+    at PasswordGrantType.getUser (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:92:6)
+    at PasswordGrantType.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:63:19)
+From previous event:
+    at PasswordGrantType.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:62:6)
+    at TokenHandler.handleGrantType (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:231:6)
+    at TokenHandler.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:93:19)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at TokenHandler.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:92:6)
+    at OAuth2Server.token (G:\wechatAdmin\node_modules\oauth2-server\lib\server.js:75:6)
+    at OAuth2.execute (G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:86:41)
+    at G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:96:32
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at G:\wechatAdmin\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at fn (G:\wechatAdmin\node_modules\egg-core\lib\loader\mixin\middleware.js:104:29)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at historyFallback (G:\wechatAdmin\app\middleware\historyFallback.js:5:15)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at i18n (G:\wechatAdmin\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dta (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xframe (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xssProtection (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at nosniff (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\nosniff.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at noopen (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at notAllow (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\methodnoallow.js:20:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at G:\wechatAdmin\node_modules\koa-compose\index.js:34:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+statusCode: 400
+status: 400
+code: 400
+message: 'Invalid grant: user credentials are invalid'
+name: 'invalid_grant'
+pid: 12336
+hostname: PC-20180416IFIT
+
+2018-05-24 14:42:54,711 WARN 9796 [-/127.0.0.1/-/49ms POST /oauth2/token] nodejs.invalid_grant: Invalid grant: user credentials are invalid
+    at new InvalidGrantError (G:\wechatAdmin\node_modules\oauth2-server\lib\errors\invalid-grant-error.js:27:14)
+    at G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:94:15
+From previous event:
+    at PasswordGrantType.getUser (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:92:6)
+    at PasswordGrantType.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:63:19)
+From previous event:
+    at PasswordGrantType.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:62:6)
+    at TokenHandler.handleGrantType (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:231:6)
+    at TokenHandler.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:93:19)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at TokenHandler.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:92:6)
+    at OAuth2Server.token (G:\wechatAdmin\node_modules\oauth2-server\lib\server.js:75:6)
+    at OAuth2.execute (G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:86:41)
+    at G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:96:32
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at G:\wechatAdmin\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at fn (G:\wechatAdmin\node_modules\egg-core\lib\loader\mixin\middleware.js:104:29)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at historyFallback (G:\wechatAdmin\app\middleware\historyFallback.js:5:15)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at i18n (G:\wechatAdmin\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dta (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xframe (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xssProtection (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at nosniff (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\nosniff.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at noopen (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at notAllow (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\methodnoallow.js:20:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at G:\wechatAdmin\node_modules\koa-compose\index.js:34:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+statusCode: 400
+status: 400
+code: 400
+message: 'Invalid grant: user credentials are invalid'
+name: 'invalid_grant'
+pid: 9796
+hostname: PC-20180416IFIT
+
+2018-05-24 14:46:04,160 WARN 12176 [-/::1/-/11ms POST /oauth2/logout] nodejs.unauthorized_request: Unauthorized request: no authentication given
+    at new UnauthorizedRequestError (G:\wechatAdmin\node_modules\oauth2-server\lib\errors\unauthorized-request-error.js:28:14)
+    at AuthenticateHandler.getTokenFromRequest (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\authenticate-handler.js:132:9)
+    at AuthenticateHandler.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\authenticate-handler.js:68:19)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at AuthenticateHandler.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\authenticate-handler.js:67:6)
+    at OAuth2Server.authenticate (G:\wechatAdmin\node_modules\oauth2-server\lib\server.js:43:6)
+    at OAuth2.execute (G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:86:41)
+    at G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:108:32
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at G:\wechatAdmin\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at fn (G:\wechatAdmin\node_modules\egg-core\lib\loader\mixin\middleware.js:104:29)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at historyFallback (G:\wechatAdmin\app\middleware\historyFallback.js:5:15)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at i18n (G:\wechatAdmin\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dta (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xframe (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xssProtection (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at nosniff (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\nosniff.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at noopen (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at notAllow (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\methodnoallow.js:20:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at G:\wechatAdmin\node_modules\koa-compose\index.js:34:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+statusCode: 401
+status: 401
+code: 401
+message: 'Unauthorized request: no authentication given'
+name: 'unauthorized_request'
+pid: 12176
+hostname: PC-20180416IFIT
+
+2018-05-24 14:46:04,998 WARN 12176 [-/127.0.0.1/-/48ms POST /oauth2/token] nodejs.invalid_grant: Invalid grant: user credentials are invalid
+    at new InvalidGrantError (G:\wechatAdmin\node_modules\oauth2-server\lib\errors\invalid-grant-error.js:27:14)
+    at G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:94:15
+From previous event:
+    at PasswordGrantType.getUser (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:92:6)
+    at PasswordGrantType.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:63:19)
+From previous event:
+    at PasswordGrantType.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:62:6)
+    at TokenHandler.handleGrantType (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:231:6)
+    at TokenHandler.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:93:19)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at TokenHandler.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:92:6)
+    at OAuth2Server.token (G:\wechatAdmin\node_modules\oauth2-server\lib\server.js:75:6)
+    at OAuth2.execute (G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:86:41)
+    at G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:96:32
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at G:\wechatAdmin\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at fn (G:\wechatAdmin\node_modules\egg-core\lib\loader\mixin\middleware.js:104:29)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at historyFallback (G:\wechatAdmin\app\middleware\historyFallback.js:5:15)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at i18n (G:\wechatAdmin\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dta (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xframe (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xssProtection (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at nosniff (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\nosniff.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at noopen (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at notAllow (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\methodnoallow.js:20:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at G:\wechatAdmin\node_modules\koa-compose\index.js:34:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+statusCode: 400
+status: 400
+code: 400
+message: 'Invalid grant: user credentials are invalid'
+name: 'invalid_grant'
+pid: 12176
+hostname: PC-20180416IFIT
+
+2018-05-26 15:07:56,919 WARN 5068 [-/::1/-/78ms POST /api/news/list] nodejs.invalid_token: Invalid token: access token has expired
+    at new InvalidTokenError (G:\wechatAdmin\node_modules\oauth2-server\lib\errors\invalid-token-error.js:25:14)
+    at AuthenticateHandler.validateAccessToken (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\authenticate-handler.js:224:11)
+    at AuthenticateHandler.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\authenticate-handler.js:74:19)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at AuthenticateHandler.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\authenticate-handler.js:73:6)
+    at OAuth2Server.authenticate (G:\wechatAdmin\node_modules\oauth2-server\lib\server.js:43:6)
+    at OAuth2.execute (G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:86:41)
+    at G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:108:32
+    at auth (G:\wechatAdmin\app\middleware\auth.js:14:57)
+    at fn (G:\wechatAdmin\node_modules\egg-core\lib\loader\mixin\middleware.js:105:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at historyFallback (G:\wechatAdmin\app\middleware\historyFallback.js:5:15)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at i18n (G:\wechatAdmin\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dta (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xframe (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xssProtection (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at nosniff (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\nosniff.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at noopen (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at notAllow (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\methodnoallow.js:20:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at G:\wechatAdmin\node_modules\koa-compose\index.js:34:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at session (G:\wechatAdmin\node_modules\koa-session\index.js:41:13)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at overrideMethod (G:\wechatAdmin\node_modules\koa-override\index.js:38:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+statusCode: 401
+status: 401
+code: 401
+message: 'Invalid token: access token has expired'
+name: 'invalid_token'
+pid: 5068
+hostname: PC-20180416IFIT
+
+2018-05-26 15:07:57,164 WARN 5068 [-/127.0.0.1/-/14ms POST /oauth2/token] nodejs.invalid_grant: Invalid grant: user credentials are invalid
+    at new InvalidGrantError (G:\wechatAdmin\node_modules\oauth2-server\lib\errors\invalid-grant-error.js:27:14)
+    at G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:94:15
+From previous event:
+    at PasswordGrantType.getUser (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:92:6)
+    at PasswordGrantType.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:63:19)
+From previous event:
+    at PasswordGrantType.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:62:6)
+    at TokenHandler.handleGrantType (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:231:6)
+    at TokenHandler.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:93:19)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at TokenHandler.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:92:6)
+    at OAuth2Server.token (G:\wechatAdmin\node_modules\oauth2-server\lib\server.js:75:6)
+    at OAuth2.execute (G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:86:41)
+    at G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:96:32
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at G:\wechatAdmin\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at fn (G:\wechatAdmin\node_modules\egg-core\lib\loader\mixin\middleware.js:104:29)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at historyFallback (G:\wechatAdmin\app\middleware\historyFallback.js:5:15)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at i18n (G:\wechatAdmin\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dta (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xframe (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xssProtection (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at nosniff (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\nosniff.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at noopen (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at notAllow (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\methodnoallow.js:20:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at G:\wechatAdmin\node_modules\koa-compose\index.js:34:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+statusCode: 400
+status: 400
+code: 400
+message: 'Invalid grant: user credentials are invalid'
+name: 'invalid_grant'
+pid: 5068
+hostname: PC-20180416IFIT
+
+2018-05-29 11:03:54,407 WARN 10024 [-/127.0.0.1/-/37ms POST /oauth2/token] nodejs.invalid_grant: Invalid grant: user credentials are invalid
+    at new InvalidGrantError (G:\wechatAdmin\node_modules\oauth2-server\lib\errors\invalid-grant-error.js:27:14)
+    at G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:94:15
+From previous event:
+    at PasswordGrantType.getUser (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:92:6)
+    at PasswordGrantType.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:63:19)
+From previous event:
+    at PasswordGrantType.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:62:6)
+    at TokenHandler.handleGrantType (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:231:6)
+    at TokenHandler.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:93:19)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at TokenHandler.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:92:6)
+    at OAuth2Server.token (G:\wechatAdmin\node_modules\oauth2-server\lib\server.js:75:6)
+    at OAuth2.execute (G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:86:41)
+    at G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:96:32
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at G:\wechatAdmin\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at fn (G:\wechatAdmin\node_modules\egg-core\lib\loader\mixin\middleware.js:104:29)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at historyFallback (G:\wechatAdmin\app\middleware\historyFallback.js:5:15)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at i18n (G:\wechatAdmin\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dta (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xframe (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xssProtection (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at nosniff (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\nosniff.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at noopen (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at notAllow (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\methodnoallow.js:20:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at G:\wechatAdmin\node_modules\koa-compose\index.js:34:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+statusCode: 400
+status: 400
+code: 400
+message: 'Invalid grant: user credentials are invalid'
+name: 'invalid_grant'
+pid: 10024
+hostname: PC-20180416IFIT
+
+2018-05-29 11:04:08,586 WARN 10024 [-/127.0.0.1/-/120ms POST /oauth2/token] nodejs.invalid_grant: Invalid grant: user credentials are invalid
+    at new InvalidGrantError (G:\wechatAdmin\node_modules\oauth2-server\lib\errors\invalid-grant-error.js:27:14)
+    at G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:94:15
+From previous event:
+    at PasswordGrantType.getUser (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:92:6)
+    at PasswordGrantType.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:63:19)
+From previous event:
+    at PasswordGrantType.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:62:6)
+    at TokenHandler.handleGrantType (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:231:6)
+    at TokenHandler.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:93:19)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at TokenHandler.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:92:6)
+    at OAuth2Server.token (G:\wechatAdmin\node_modules\oauth2-server\lib\server.js:75:6)
+    at OAuth2.execute (G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:86:41)
+    at G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:96:32
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at G:\wechatAdmin\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at fn (G:\wechatAdmin\node_modules\egg-core\lib\loader\mixin\middleware.js:104:29)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at historyFallback (G:\wechatAdmin\app\middleware\historyFallback.js:5:15)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at i18n (G:\wechatAdmin\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dta (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xframe (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xssProtection (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at nosniff (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\nosniff.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at noopen (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at notAllow (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\methodnoallow.js:20:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at G:\wechatAdmin\node_modules\koa-compose\index.js:34:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+statusCode: 400
+status: 400
+code: 400
+message: 'Invalid grant: user credentials are invalid'
+name: 'invalid_grant'
+pid: 10024
+hostname: PC-20180416IFIT
+
+2018-05-29 11:04:10,089 WARN 10024 [-/127.0.0.1/-/93ms POST /oauth2/token] nodejs.invalid_grant: Invalid grant: user credentials are invalid
+    at new InvalidGrantError (G:\wechatAdmin\node_modules\oauth2-server\lib\errors\invalid-grant-error.js:27:14)
+    at G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:94:15
+From previous event:
+    at PasswordGrantType.getUser (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:92:6)
+    at PasswordGrantType.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:63:19)
+From previous event:
+    at PasswordGrantType.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:62:6)
+    at TokenHandler.handleGrantType (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:231:6)
+    at TokenHandler.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:93:19)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at TokenHandler.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:92:6)
+    at OAuth2Server.token (G:\wechatAdmin\node_modules\oauth2-server\lib\server.js:75:6)
+    at OAuth2.execute (G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:86:41)
+    at G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:96:32
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at G:\wechatAdmin\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at fn (G:\wechatAdmin\node_modules\egg-core\lib\loader\mixin\middleware.js:104:29)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at historyFallback (G:\wechatAdmin\app\middleware\historyFallback.js:5:15)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at i18n (G:\wechatAdmin\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dta (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xframe (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xssProtection (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at nosniff (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\nosniff.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at noopen (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at notAllow (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\methodnoallow.js:20:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at G:\wechatAdmin\node_modules\koa-compose\index.js:34:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+statusCode: 400
+status: 400
+code: 400
+message: 'Invalid grant: user credentials are invalid'
+name: 'invalid_grant'
+pid: 10024
+hostname: PC-20180416IFIT
+
+2018-05-29 11:04:10,824 WARN 10024 [-/127.0.0.1/-/97ms POST /oauth2/token] nodejs.invalid_grant: Invalid grant: user credentials are invalid
+    at new InvalidGrantError (G:\wechatAdmin\node_modules\oauth2-server\lib\errors\invalid-grant-error.js:27:14)
+    at G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:94:15
+From previous event:
+    at PasswordGrantType.getUser (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:92:6)
+    at PasswordGrantType.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:63:19)
+From previous event:
+    at PasswordGrantType.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:62:6)
+    at TokenHandler.handleGrantType (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:231:6)
+    at TokenHandler.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:93:19)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at TokenHandler.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:92:6)
+    at OAuth2Server.token (G:\wechatAdmin\node_modules\oauth2-server\lib\server.js:75:6)
+    at OAuth2.execute (G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:86:41)
+    at G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:96:32
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at G:\wechatAdmin\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at fn (G:\wechatAdmin\node_modules\egg-core\lib\loader\mixin\middleware.js:104:29)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at historyFallback (G:\wechatAdmin\app\middleware\historyFallback.js:5:15)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at i18n (G:\wechatAdmin\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dta (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xframe (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xssProtection (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at nosniff (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\nosniff.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at noopen (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at notAllow (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\methodnoallow.js:20:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at G:\wechatAdmin\node_modules\koa-compose\index.js:34:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+statusCode: 400
+status: 400
+code: 400
+message: 'Invalid grant: user credentials are invalid'
+name: 'invalid_grant'
+pid: 10024
+hostname: PC-20180416IFIT
+
+2018-05-29 11:04:10,978 WARN 10024 [-/127.0.0.1/-/95ms POST /oauth2/token] nodejs.invalid_grant: Invalid grant: user credentials are invalid
+    at new InvalidGrantError (G:\wechatAdmin\node_modules\oauth2-server\lib\errors\invalid-grant-error.js:27:14)
+    at G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:94:15
+From previous event:
+    at PasswordGrantType.getUser (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:92:6)
+    at PasswordGrantType.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:63:19)
+From previous event:
+    at PasswordGrantType.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:62:6)
+    at TokenHandler.handleGrantType (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:231:6)
+    at TokenHandler.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:93:19)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at TokenHandler.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:92:6)
+    at OAuth2Server.token (G:\wechatAdmin\node_modules\oauth2-server\lib\server.js:75:6)
+    at OAuth2.execute (G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:86:41)
+    at G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:96:32
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at G:\wechatAdmin\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at fn (G:\wechatAdmin\node_modules\egg-core\lib\loader\mixin\middleware.js:104:29)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at historyFallback (G:\wechatAdmin\app\middleware\historyFallback.js:5:15)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at i18n (G:\wechatAdmin\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dta (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xframe (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xssProtection (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at nosniff (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\nosniff.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at noopen (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at notAllow (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\methodnoallow.js:20:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at G:\wechatAdmin\node_modules\koa-compose\index.js:34:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+statusCode: 400
+status: 400
+code: 400
+message: 'Invalid grant: user credentials are invalid'
+name: 'invalid_grant'
+pid: 10024
+hostname: PC-20180416IFIT
+
+2018-05-29 11:04:17,841 WARN 10024 [-/127.0.0.1/-/10ms POST /oauth2/token] nodejs.invalid_grant: Invalid grant: user credentials are invalid
+    at new InvalidGrantError (G:\wechatAdmin\node_modules\oauth2-server\lib\errors\invalid-grant-error.js:27:14)
+    at G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:94:15
+From previous event:
+    at PasswordGrantType.getUser (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:92:6)
+    at PasswordGrantType.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:63:19)
+From previous event:
+    at PasswordGrantType.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:62:6)
+    at TokenHandler.handleGrantType (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:231:6)
+    at TokenHandler.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:93:19)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at TokenHandler.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:92:6)
+    at OAuth2Server.token (G:\wechatAdmin\node_modules\oauth2-server\lib\server.js:75:6)
+    at OAuth2.execute (G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:86:41)
+    at G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:96:32
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at G:\wechatAdmin\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at fn (G:\wechatAdmin\node_modules\egg-core\lib\loader\mixin\middleware.js:104:29)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at historyFallback (G:\wechatAdmin\app\middleware\historyFallback.js:5:15)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at i18n (G:\wechatAdmin\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dta (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xframe (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xssProtection (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at nosniff (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\nosniff.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at noopen (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at notAllow (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\methodnoallow.js:20:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at G:\wechatAdmin\node_modules\koa-compose\index.js:34:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+statusCode: 400
+status: 400
+code: 400
+message: 'Invalid grant: user credentials are invalid'
+name: 'invalid_grant'
+pid: 10024
+hostname: PC-20180416IFIT
+
+2018-05-29 11:04:25,728 WARN 10024 [-/127.0.0.1/-/111ms POST /oauth2/token] nodejs.invalid_grant: Invalid grant: user credentials are invalid
+    at new InvalidGrantError (G:\wechatAdmin\node_modules\oauth2-server\lib\errors\invalid-grant-error.js:27:14)
+    at G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:94:15
+From previous event:
+    at PasswordGrantType.getUser (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:92:6)
+    at PasswordGrantType.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:63:19)
+From previous event:
+    at PasswordGrantType.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:62:6)
+    at TokenHandler.handleGrantType (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:231:6)
+    at TokenHandler.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:93:19)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at TokenHandler.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:92:6)
+    at OAuth2Server.token (G:\wechatAdmin\node_modules\oauth2-server\lib\server.js:75:6)
+    at OAuth2.execute (G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:86:41)
+    at G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:96:32
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at G:\wechatAdmin\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at fn (G:\wechatAdmin\node_modules\egg-core\lib\loader\mixin\middleware.js:104:29)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at historyFallback (G:\wechatAdmin\app\middleware\historyFallback.js:5:15)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at i18n (G:\wechatAdmin\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dta (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xframe (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xssProtection (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at nosniff (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\nosniff.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at noopen (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at notAllow (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\methodnoallow.js:20:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at G:\wechatAdmin\node_modules\koa-compose\index.js:34:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+statusCode: 400
+status: 400
+code: 400
+message: 'Invalid grant: user credentials are invalid'
+name: 'invalid_grant'
+pid: 10024
+hostname: PC-20180416IFIT
+
+2018-05-29 11:05:24,627 WARN 10024 [-/127.0.0.1/-/153ms POST /oauth2/token] nodejs.invalid_grant: Invalid grant: user credentials are invalid
+    at new InvalidGrantError (G:\wechatAdmin\node_modules\oauth2-server\lib\errors\invalid-grant-error.js:27:14)
+    at G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:94:15
+From previous event:
+    at PasswordGrantType.getUser (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:92:6)
+    at PasswordGrantType.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:63:19)
+From previous event:
+    at PasswordGrantType.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:62:6)
+    at TokenHandler.handleGrantType (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:231:6)
+    at TokenHandler.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:93:19)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at TokenHandler.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:92:6)
+    at OAuth2Server.token (G:\wechatAdmin\node_modules\oauth2-server\lib\server.js:75:6)
+    at OAuth2.execute (G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:86:41)
+    at G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:96:32
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at G:\wechatAdmin\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at fn (G:\wechatAdmin\node_modules\egg-core\lib\loader\mixin\middleware.js:104:29)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at historyFallback (G:\wechatAdmin\app\middleware\historyFallback.js:5:15)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at i18n (G:\wechatAdmin\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dta (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xframe (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xssProtection (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at nosniff (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\nosniff.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at noopen (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at notAllow (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\methodnoallow.js:20:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at G:\wechatAdmin\node_modules\koa-compose\index.js:34:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+statusCode: 400
+status: 400
+code: 400
+message: 'Invalid grant: user credentials are invalid'
+name: 'invalid_grant'
+pid: 10024
+hostname: PC-20180416IFIT
+
+2018-05-29 11:05:24,882 WARN 10024 [-/127.0.0.1/-/127ms POST /oauth2/token] nodejs.invalid_grant: Invalid grant: user credentials are invalid
+    at new InvalidGrantError (G:\wechatAdmin\node_modules\oauth2-server\lib\errors\invalid-grant-error.js:27:14)
+    at G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:94:15
+From previous event:
+    at PasswordGrantType.getUser (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:92:6)
+    at PasswordGrantType.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:63:19)
+From previous event:
+    at PasswordGrantType.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:62:6)
+    at TokenHandler.handleGrantType (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:231:6)
+    at TokenHandler.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:93:19)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at TokenHandler.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:92:6)
+    at OAuth2Server.token (G:\wechatAdmin\node_modules\oauth2-server\lib\server.js:75:6)
+    at OAuth2.execute (G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:86:41)
+    at G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:96:32
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at G:\wechatAdmin\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at fn (G:\wechatAdmin\node_modules\egg-core\lib\loader\mixin\middleware.js:104:29)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at historyFallback (G:\wechatAdmin\app\middleware\historyFallback.js:5:15)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at i18n (G:\wechatAdmin\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dta (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xframe (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xssProtection (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at nosniff (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\nosniff.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at noopen (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at notAllow (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\methodnoallow.js:20:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at G:\wechatAdmin\node_modules\koa-compose\index.js:34:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+statusCode: 400
+status: 400
+code: 400
+message: 'Invalid grant: user credentials are invalid'
+name: 'invalid_grant'
+pid: 10024
+hostname: PC-20180416IFIT
+
+2018-05-29 11:05:33,962 WARN 10024 [-/127.0.0.1/-/14ms POST /oauth2/token] nodejs.invalid_grant: Invalid grant: user credentials are invalid
+    at new InvalidGrantError (G:\wechatAdmin\node_modules\oauth2-server\lib\errors\invalid-grant-error.js:27:14)
+    at G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:94:15
+From previous event:
+    at PasswordGrantType.getUser (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:92:6)
+    at PasswordGrantType.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:63:19)
+From previous event:
+    at PasswordGrantType.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:62:6)
+    at TokenHandler.handleGrantType (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:231:6)
+    at TokenHandler.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:93:19)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at TokenHandler.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:92:6)
+    at OAuth2Server.token (G:\wechatAdmin\node_modules\oauth2-server\lib\server.js:75:6)
+    at OAuth2.execute (G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:86:41)
+    at G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:96:32
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at G:\wechatAdmin\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at fn (G:\wechatAdmin\node_modules\egg-core\lib\loader\mixin\middleware.js:104:29)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at historyFallback (G:\wechatAdmin\app\middleware\historyFallback.js:5:15)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at i18n (G:\wechatAdmin\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dta (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xframe (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xssProtection (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at nosniff (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\nosniff.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at noopen (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at notAllow (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\methodnoallow.js:20:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at G:\wechatAdmin\node_modules\koa-compose\index.js:34:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+statusCode: 400
+status: 400
+code: 400
+message: 'Invalid grant: user credentials are invalid'
+name: 'invalid_grant'
+pid: 10024
+hostname: PC-20180416IFIT
+
+2018-05-29 11:06:30,989 WARN 10704 [-/127.0.0.1/-/55ms POST /oauth2/token] nodejs.invalid_grant: Invalid grant: user credentials are invalid
+    at new InvalidGrantError (G:\wechatAdmin\node_modules\oauth2-server\lib\errors\invalid-grant-error.js:27:14)
+    at G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:94:15
+From previous event:
+    at PasswordGrantType.getUser (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:92:6)
+    at PasswordGrantType.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:63:19)
+From previous event:
+    at PasswordGrantType.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:62:6)
+    at TokenHandler.handleGrantType (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:231:6)
+    at TokenHandler.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:93:19)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at TokenHandler.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:92:6)
+    at OAuth2Server.token (G:\wechatAdmin\node_modules\oauth2-server\lib\server.js:75:6)
+    at OAuth2.execute (G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:86:41)
+    at G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:96:32
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at G:\wechatAdmin\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at fn (G:\wechatAdmin\node_modules\egg-core\lib\loader\mixin\middleware.js:104:29)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at historyFallback (G:\wechatAdmin\app\middleware\historyFallback.js:5:15)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at i18n (G:\wechatAdmin\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dta (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xframe (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xssProtection (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at nosniff (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\nosniff.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at noopen (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at notAllow (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\methodnoallow.js:20:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at G:\wechatAdmin\node_modules\koa-compose\index.js:34:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+statusCode: 400
+status: 400
+code: 400
+message: 'Invalid grant: user credentials are invalid'
+name: 'invalid_grant'
+pid: 10704
+hostname: PC-20180416IFIT
+
+2018-05-29 11:06:43,416 WARN 10704 [-/127.0.0.1/-/132ms POST /oauth2/token] nodejs.invalid_grant: Invalid grant: user credentials are invalid
+    at new InvalidGrantError (G:\wechatAdmin\node_modules\oauth2-server\lib\errors\invalid-grant-error.js:27:14)
+    at G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:94:15
+From previous event:
+    at PasswordGrantType.getUser (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:92:6)
+    at PasswordGrantType.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:63:19)
+From previous event:
+    at PasswordGrantType.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:62:6)
+    at TokenHandler.handleGrantType (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:231:6)
+    at TokenHandler.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:93:19)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at TokenHandler.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:92:6)
+    at OAuth2Server.token (G:\wechatAdmin\node_modules\oauth2-server\lib\server.js:75:6)
+    at OAuth2.execute (G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:86:41)
+    at G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:96:32
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at G:\wechatAdmin\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at fn (G:\wechatAdmin\node_modules\egg-core\lib\loader\mixin\middleware.js:104:29)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at historyFallback (G:\wechatAdmin\app\middleware\historyFallback.js:5:15)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at i18n (G:\wechatAdmin\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dta (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xframe (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xssProtection (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at nosniff (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\nosniff.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at noopen (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at notAllow (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\methodnoallow.js:20:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at G:\wechatAdmin\node_modules\koa-compose\index.js:34:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+statusCode: 400
+status: 400
+code: 400
+message: 'Invalid grant: user credentials are invalid'
+name: 'invalid_grant'
+pid: 10704
+hostname: PC-20180416IFIT
+
+2018-05-29 11:19:06,645 WARN 10704 [-/::1/-/5ms POST /api/role/index] nodejs.invalid_token: Invalid token: access token has expired
+    at new InvalidTokenError (G:\wechatAdmin\node_modules\oauth2-server\lib\errors\invalid-token-error.js:25:14)
+    at AuthenticateHandler.validateAccessToken (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\authenticate-handler.js:224:11)
+    at AuthenticateHandler.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\authenticate-handler.js:74:19)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at AuthenticateHandler.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\authenticate-handler.js:73:6)
+    at OAuth2Server.authenticate (G:\wechatAdmin\node_modules\oauth2-server\lib\server.js:43:6)
+    at OAuth2.execute (G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:86:41)
+    at G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:108:32
+    at auth (G:\wechatAdmin\app\middleware\auth.js:14:57)
+    at fn (G:\wechatAdmin\node_modules\egg-core\lib\loader\mixin\middleware.js:105:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at historyFallback (G:\wechatAdmin\app\middleware\historyFallback.js:5:15)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at i18n (G:\wechatAdmin\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dta (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xframe (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xssProtection (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at nosniff (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\nosniff.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at noopen (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at notAllow (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\methodnoallow.js:20:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at G:\wechatAdmin\node_modules\koa-compose\index.js:34:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at session (G:\wechatAdmin\node_modules\koa-session\index.js:41:13)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at overrideMethod (G:\wechatAdmin\node_modules\koa-override\index.js:38:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+statusCode: 401
+status: 401
+code: 401
+message: 'Invalid token: access token has expired'
+name: 'invalid_token'
+pid: 10704
+hostname: PC-20180416IFIT
+
+2018-05-29 11:19:06,855 WARN 10704 [-/127.0.0.1/-/8ms POST /oauth2/token] nodejs.invalid_grant: Invalid grant: user credentials are invalid
+    at new InvalidGrantError (G:\wechatAdmin\node_modules\oauth2-server\lib\errors\invalid-grant-error.js:27:14)
+    at G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:94:15
+From previous event:
+    at PasswordGrantType.getUser (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:92:6)
+    at PasswordGrantType.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:63:19)
+From previous event:
+    at PasswordGrantType.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:62:6)
+    at TokenHandler.handleGrantType (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:231:6)
+    at TokenHandler.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:93:19)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at TokenHandler.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:92:6)
+    at OAuth2Server.token (G:\wechatAdmin\node_modules\oauth2-server\lib\server.js:75:6)
+    at OAuth2.execute (G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:86:41)
+    at G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:96:32
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at G:\wechatAdmin\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at fn (G:\wechatAdmin\node_modules\egg-core\lib\loader\mixin\middleware.js:104:29)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at historyFallback (G:\wechatAdmin\app\middleware\historyFallback.js:5:15)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at i18n (G:\wechatAdmin\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dta (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xframe (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xssProtection (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at nosniff (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\nosniff.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at noopen (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at notAllow (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\methodnoallow.js:20:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at G:\wechatAdmin\node_modules\koa-compose\index.js:34:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+statusCode: 400
+status: 400
+code: 400
+message: 'Invalid grant: user credentials are invalid'
+name: 'invalid_grant'
+pid: 10704
+hostname: PC-20180416IFIT
+
+2018-05-29 13:58:30,361 WARN 9480 [-/::1/-/9ms POST /api/news/list] nodejs.invalid_token: Invalid token: access token has expired
+    at new InvalidTokenError (G:\wechatAdmin\node_modules\oauth2-server\lib\errors\invalid-token-error.js:25:14)
+    at AuthenticateHandler.validateAccessToken (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\authenticate-handler.js:224:11)
+    at AuthenticateHandler.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\authenticate-handler.js:74:19)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at AuthenticateHandler.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\authenticate-handler.js:73:6)
+    at OAuth2Server.authenticate (G:\wechatAdmin\node_modules\oauth2-server\lib\server.js:43:6)
+    at OAuth2.execute (G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:86:41)
+    at G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:108:32
+    at auth (G:\wechatAdmin\app\middleware\auth.js:14:57)
+    at fn (G:\wechatAdmin\node_modules\egg-core\lib\loader\mixin\middleware.js:105:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at historyFallback (G:\wechatAdmin\app\middleware\historyFallback.js:5:15)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at i18n (G:\wechatAdmin\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dta (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xframe (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xssProtection (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at nosniff (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\nosniff.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at noopen (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at notAllow (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\methodnoallow.js:20:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at G:\wechatAdmin\node_modules\koa-compose\index.js:34:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at session (G:\wechatAdmin\node_modules\koa-session\index.js:41:13)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at overrideMethod (G:\wechatAdmin\node_modules\koa-override\index.js:38:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+statusCode: 401
+status: 401
+code: 401
+message: 'Invalid token: access token has expired'
+name: 'invalid_token'
+pid: 9480
+hostname: PC-20180416IFIT
+
+2018-05-29 13:58:30,566 WARN 9480 [-/127.0.0.1/-/10ms POST /oauth2/token] nodejs.invalid_grant: Invalid grant: user credentials are invalid
+    at new InvalidGrantError (G:\wechatAdmin\node_modules\oauth2-server\lib\errors\invalid-grant-error.js:27:14)
+    at G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:94:15
+From previous event:
+    at PasswordGrantType.getUser (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:92:6)
+    at PasswordGrantType.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:63:19)
+From previous event:
+    at PasswordGrantType.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:62:6)
+    at TokenHandler.handleGrantType (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:231:6)
+    at TokenHandler.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:93:19)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at TokenHandler.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:92:6)
+    at OAuth2Server.token (G:\wechatAdmin\node_modules\oauth2-server\lib\server.js:75:6)
+    at OAuth2.execute (G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:86:41)
+    at G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:96:32
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at G:\wechatAdmin\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at fn (G:\wechatAdmin\node_modules\egg-core\lib\loader\mixin\middleware.js:104:29)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at historyFallback (G:\wechatAdmin\app\middleware\historyFallback.js:5:15)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at i18n (G:\wechatAdmin\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dta (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xframe (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xssProtection (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at nosniff (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\nosniff.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at noopen (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at notAllow (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\methodnoallow.js:20:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at G:\wechatAdmin\node_modules\koa-compose\index.js:34:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+statusCode: 400
+status: 400
+code: 400
+message: 'Invalid grant: user credentials are invalid'
+name: 'invalid_grant'
+pid: 9480
+hostname: PC-20180416IFIT
+
+2018-05-29 17:58:04,192 WARN 7280 [-/::1/-/7ms POST /api/role/index] nodejs.invalid_token: Invalid token: access token has expired
+    at new InvalidTokenError (G:\wechatAdmin\node_modules\oauth2-server\lib\errors\invalid-token-error.js:25:14)
+    at AuthenticateHandler.validateAccessToken (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\authenticate-handler.js:224:11)
+    at AuthenticateHandler.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\authenticate-handler.js:74:19)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at AuthenticateHandler.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\authenticate-handler.js:73:6)
+    at OAuth2Server.authenticate (G:\wechatAdmin\node_modules\oauth2-server\lib\server.js:43:6)
+    at OAuth2.execute (G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:86:41)
+    at G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:108:32
+    at auth (G:\wechatAdmin\app\middleware\auth.js:14:57)
+    at fn (G:\wechatAdmin\node_modules\egg-core\lib\loader\mixin\middleware.js:105:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at historyFallback (G:\wechatAdmin\app\middleware\historyFallback.js:5:15)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at i18n (G:\wechatAdmin\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dta (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xframe (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xssProtection (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at nosniff (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\nosniff.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at noopen (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at notAllow (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\methodnoallow.js:20:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at G:\wechatAdmin\node_modules\koa-compose\index.js:34:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at session (G:\wechatAdmin\node_modules\koa-session\index.js:41:13)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at overrideMethod (G:\wechatAdmin\node_modules\koa-override\index.js:38:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+statusCode: 401
+status: 401
+code: 401
+message: 'Invalid token: access token has expired'
+name: 'invalid_token'
+pid: 7280
+hostname: PC-20180416IFIT
+
+2018-05-29 17:58:04,454 WARN 7280 [-/127.0.0.1/-/14ms POST /oauth2/token] nodejs.invalid_grant: Invalid grant: user credentials are invalid
+    at new InvalidGrantError (G:\wechatAdmin\node_modules\oauth2-server\lib\errors\invalid-grant-error.js:27:14)
+    at G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:94:15
+From previous event:
+    at PasswordGrantType.getUser (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:92:6)
+    at PasswordGrantType.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:63:19)
+From previous event:
+    at PasswordGrantType.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:62:6)
+    at TokenHandler.handleGrantType (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:231:6)
+    at TokenHandler.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:93:19)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at TokenHandler.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:92:6)
+    at OAuth2Server.token (G:\wechatAdmin\node_modules\oauth2-server\lib\server.js:75:6)
+    at OAuth2.execute (G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:86:41)
+    at G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:96:32
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at G:\wechatAdmin\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at fn (G:\wechatAdmin\node_modules\egg-core\lib\loader\mixin\middleware.js:104:29)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at historyFallback (G:\wechatAdmin\app\middleware\historyFallback.js:5:15)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at i18n (G:\wechatAdmin\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dta (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xframe (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xssProtection (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at nosniff (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\nosniff.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at noopen (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at notAllow (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\methodnoallow.js:20:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at G:\wechatAdmin\node_modules\koa-compose\index.js:34:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+statusCode: 400
+status: 400
+code: 400
+message: 'Invalid grant: user credentials are invalid'
+name: 'invalid_grant'
+pid: 7280
+hostname: PC-20180416IFIT
+
+2018-05-31 10:01:44,077 WARN 10216 [-/::1/-/16ms POST /api/admin/user/list] nodejs.invalid_token: Invalid token: access token has expired
+    at new InvalidTokenError (G:\wechatAdmin\node_modules\oauth2-server\lib\errors\invalid-token-error.js:25:14)
+    at AuthenticateHandler.validateAccessToken (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\authenticate-handler.js:224:11)
+    at AuthenticateHandler.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\authenticate-handler.js:74:19)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at AuthenticateHandler.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\authenticate-handler.js:73:6)
+    at OAuth2Server.authenticate (G:\wechatAdmin\node_modules\oauth2-server\lib\server.js:43:6)
+    at OAuth2.execute (G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:86:41)
+    at G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:108:32
+    at auth (G:\wechatAdmin\app\middleware\auth.js:14:57)
+    at fn (G:\wechatAdmin\node_modules\egg-core\lib\loader\mixin\middleware.js:105:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at historyFallback (G:\wechatAdmin\app\middleware\historyFallback.js:5:15)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at i18n (G:\wechatAdmin\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dta (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xframe (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xssProtection (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at nosniff (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\nosniff.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at noopen (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at notAllow (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\methodnoallow.js:20:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at G:\wechatAdmin\node_modules\koa-compose\index.js:34:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at session (G:\wechatAdmin\node_modules\koa-session\index.js:41:13)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at overrideMethod (G:\wechatAdmin\node_modules\koa-override\index.js:38:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+statusCode: 401
+status: 401
+code: 401
+message: 'Invalid token: access token has expired'
+name: 'invalid_token'
+pid: 10216
+hostname: PC-20180416IFIT
+
+2018-05-31 10:01:44,335 WARN 10216 [-/127.0.0.1/-/62ms POST /oauth2/token] nodejs.invalid_grant: Invalid grant: user credentials are invalid
+    at new InvalidGrantError (G:\wechatAdmin\node_modules\oauth2-server\lib\errors\invalid-grant-error.js:27:14)
+    at G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:94:15
+From previous event:
+    at PasswordGrantType.getUser (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:92:6)
+    at PasswordGrantType.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:63:19)
+From previous event:
+    at PasswordGrantType.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\grant-types\password-grant-type.js:62:6)
+    at TokenHandler.handleGrantType (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:231:6)
+    at TokenHandler.<anonymous> (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:93:19)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at TokenHandler.handle (G:\wechatAdmin\node_modules\oauth2-server\lib\handlers\token-handler.js:92:6)
+    at OAuth2Server.token (G:\wechatAdmin\node_modules\oauth2-server\lib\server.js:75:6)
+    at OAuth2.execute (G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:86:41)
+    at G:\wechatAdmin\node_modules\egg-oauth2-server\lib\server.js:96:32
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at G:\wechatAdmin\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at G:\wechatAdmin\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at fn (G:\wechatAdmin\node_modules\egg-core\lib\loader\mixin\middleware.js:104:29)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at historyFallback (G:\wechatAdmin\app\middleware\historyFallback.js:5:15)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at i18n (G:\wechatAdmin\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at dta (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xframe (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at xssProtection (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at nosniff (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\nosniff.js:7:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at noopen (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\noopen.js:8:11)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+    at notAllow (G:\wechatAdmin\node_modules\egg-security\lib\middlewares\methodnoallow.js:20:12)
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at G:\wechatAdmin\node_modules\koa-compose\index.js:34:12
+    at dispatch (G:\wechatAdmin\node_modules\koa-compose\index.js:42:32)
+    at next (G:\wechatAdmin\node_modules\koa-compose\index.js:43:18)
+statusCode: 400
+status: 400
+code: 400
+message: 'Invalid grant: user credentials are invalid'
+name: 'invalid_grant'
+pid: 10216
+hostname: PC-20180416IFIT
+

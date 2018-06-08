@@ -1,0 +1,93 @@
+.material-news {
+    position: relative;
+    text-align: justify;
+}
+
+.material-news-item {
+    padding: 10px 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 23.3333333%;
+    display: inline-block;
+    border: 1px solid #e8e8e8;
+    box-shadow: 0px 0px 1px rgba(15, 15, 15, .3);
+    .material-cover {
+        position: relative;
+        .cover {
+            background-size: cover;
+            height: 110px;
+            width: 100%;
+            background-position: center center;
+        }
+        .title {
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            height: 20px;
+            background-color: rgba(15, 15, 15, .6);
+            color: #fff;
+            width: 100%;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    }
+    .material-sub {
+        display: flex;
+        padding: 10px 0px;
+        border-bottom: 1px solid #e8e8e8;
+        &:last-child {
+            border: 0px;
+        }
+        .cover {
+            background-size: cover;
+            height: 48px;
+            width: 48px;
+            background-position: center center;
+        }
+        .title {
+            flex: 1;
+        }
+    }
+}
+
+.material-news-ft {
+    display: flex;
+    position: relative;
+    padding-top: 10px;
+    border-top: 1px solid #e8e8e8;
+    .material-news-ft-left {
+        flex: 2;
+    }
+    .material-news-ft-right {
+        flex: 1;
+        text-align: right;
+        .anticon {
+            margin-left: 15px;
+            cursor: pointer;
+        }
+    }
+}
+
+.material-hd-tools {
+    margin-bottom: 30px;
+    .material-hd-tools-search {
+        position: relative;
+        display: inline-block;
+        input {
+            line-height: 30px;
+            padding: 0px 12px;
+            border-radius: 4px;
+            border: 1px solid #d9d9d9;
+            margin-left: 10px;
+            outline: none;
+            width: 260px;
+            padding-right: 50px;
+        }
+        .material-hd-tools-search-btn {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+    }
+}

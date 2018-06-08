@@ -1,0 +1,10 @@
+{
+  "token": {
+    "accessToken": "10_t3G4N0I1xGnobC6G27FEAMG4gefasK6Z0A59zlgJQKi2HzSu6dU5urhncm-HW7yN1MWHLT6-oMCjK5msXUS6WJJLpOKvB90mBSbIfqIjx2hgFWhFUM5n04T15hw7w117XjsCyhOwS2LaRHoWSIDfCAAHXS",
+    "expireTime": 1528173393556
+  },
+  "news": {
+    "errcode": 40007,
+    "errmsg": "invalid media_id hint: [4XkFeA0204a456]"
+  }
+}

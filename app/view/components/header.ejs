@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>灯聚网</title>
+    <link rel="stylesheet" href="/public/assets/css/style.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_680828_1itettj5eu4sra4i.css">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.slim.min.js"></script>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="wapper">
+            <div class="left-main">
+                <div class="seach-box">
+                    <i class="iconfont icon-search" id="seachBtn"></i>
+                    <div class="seach-box-input <% if(q) { %> seach-box-input-actice <% } %>" id="seachBoxInput">
+                        <input class="seach-input" type="seach" placeholder="请输入您的关键词" <% if(q) { %> value="<%= q %>" <% }%> />
+                        <i class="iconfont icon-close" id="seachIconClose"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-main">
+                
+            </div>
+
+        </div>
+    </div>

@@ -1,0 +1,65 @@
+<%- include("../components/header.ejs") %>
+
+<div class="wapper">
+
+  <div class="content">
+
+    <div class="left-main">
+      <div class="card">
+        <div class="media-list">
+        <% lists.forEach(function(item){ %>
+
+          <a href="/p/<%= item._id %>" class="media-thumb-list">
+            <div class="media-thumb">
+              <img src="<%= item.thumb %>" />
+            </div>
+            <div class="media-content">
+              <div class="media-content-hd">
+                  <h3 class="media-content-title">
+                   
+                      <%= item.title %>
+                 
+                  </h3>
+              </div>
+              <div class="media-content-bd">
+                <%= item.digest || '暂无描述' %>
+              </div>
+
+              <div class="media-content-fd">
+
+
+                <span class="iconfont icon-attention_light"></span>
+                <%= Math.floor(1000*Math.random()) %>
+                <span class="iconfont icon-round_comment_light"></span>
+                <%= Math.floor(1000*Math.random()) %>
+                <span class="iconfont icon-evaluate"></span>
+                <%= Math.floor(1000*Math.random()) %>
+              </div>
+            </div>
+          </a>
+
+        <% }) %>
+          
+        </div>
+    
+        <%- include('./uitl/page.ejs',{
+          pages: pages,
+          current_page: current_page,
+          base: '/'
+          })
+        %>
+
+      </div>
+    </div>
+
+    <div class="right-main">
+      <div class="card"></div>
+    </div>
+
+    <div class="clear"></div>
+
+  </div>
+
+</div>
+
+<%- include("../components/footer.ejs") %>
